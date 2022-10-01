@@ -1,3 +1,3 @@
 hpCurrent = max( 0, hpCurrent-other.damage );
 
-instance_destroy(other);
+other.timer = 0;
