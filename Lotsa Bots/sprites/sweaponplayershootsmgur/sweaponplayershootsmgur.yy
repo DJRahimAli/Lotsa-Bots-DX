@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "sWeaponPlayerShootSMGUR",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,12 +27,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"5676b999-52cd-4c17-a3c7-7582d94cab48","path":"sprites/sWeaponPlayerShootSMGUR/sWeaponPlayerShootSMGUR.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"5676b999-52cd-4c17-a3c7-7582d94cab48","path":"sprites/sWeaponPlayerShootSMGUR/sWeaponPlayerShootSMGUR.yy",},"LayerId":{"name":"199dd493-5d2a-4044-a3a8-0efb60e4287a","path":"sprites/sWeaponPlayerShootSMGUR/sWeaponPlayerShootSMGUR.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sWeaponPlayerShootSMGUR","path":"sprites/sWeaponPlayerShootSMGUR/sWeaponPlayerShootSMGUR.yy",},"resourceVersion":"1.0","name":"5676b999-52cd-4c17-a3c7-7582d94cab48","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"5676b999-52cd-4c17-a3c7-7582d94cab48",},
   ],
   "sequence": {
-    "spriteId": {"name":"sWeaponPlayerShootSMGUR","path":"sprites/sWeaponPlayerShootSMGUR/sWeaponPlayerShootSMGUR.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "sWeaponPlayerShootSMGUR",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -37,12 +40,12 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 1.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"c7ec0348-fa16-4aeb-8d24-6cb910103cc3","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"5676b999-52cd-4c17-a3c7-7582d94cab48","path":"sprites/sWeaponPlayerShootSMGUR/sWeaponPlayerShootSMGUR.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"c7ec0348-fa16-4aeb-8d24-6cb910103cc3","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"5676b999-52cd-4c17-a3c7-7582d94cab48","path":"sprites/sWeaponPlayerShootSMGUR/sWeaponPlayerShootSMGUR.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,22 +61,13 @@
     "yorigin": 96,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"sWeaponPlayerShootSMGUR","path":"sprites/sWeaponPlayerShootSMGUR/sWeaponPlayerShootSMGUR.yy",},
-    "resourceVersion": "1.4",
-    "name": "sWeaponPlayerShootSMGUR",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"199dd493-5d2a-4044-a3a8-0efb60e4287a","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"199dd493-5d2a-4044-a3a8-0efb60e4287a","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Shooting Submachine Gun",
     "path": "folders/Sprites/Entities/Player/Weapons/Shooting Submachine Gun.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "sWeaponPlayerShootSMGUR",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

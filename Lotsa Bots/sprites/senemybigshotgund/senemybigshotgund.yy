@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "sEnemyBigShotgunD",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,12 +27,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"a8376aa4-0459-42f1-b397-59520ba4c16a","path":"sprites/sEnemyBigShotgunD/sEnemyBigShotgunD.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"a8376aa4-0459-42f1-b397-59520ba4c16a","path":"sprites/sEnemyBigShotgunD/sEnemyBigShotgunD.yy",},"LayerId":{"name":"ab24205e-7383-414a-8191-89c81e89c069","path":"sprites/sEnemyBigShotgunD/sEnemyBigShotgunD.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sEnemyBigShotgunD","path":"sprites/sEnemyBigShotgunD/sEnemyBigShotgunD.yy",},"resourceVersion":"1.0","name":"a8376aa4-0459-42f1-b397-59520ba4c16a","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a8376aa4-0459-42f1-b397-59520ba4c16a",},
   ],
   "sequence": {
-    "spriteId": {"name":"sEnemyBigShotgunD","path":"sprites/sEnemyBigShotgunD/sEnemyBigShotgunD.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "sEnemyBigShotgunD",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -37,12 +40,12 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 1.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"087080eb-b852-4d1f-9c22-668ea92c936a","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a8376aa4-0459-42f1-b397-59520ba4c16a","path":"sprites/sEnemyBigShotgunD/sEnemyBigShotgunD.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"087080eb-b852-4d1f-9c22-668ea92c936a","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a8376aa4-0459-42f1-b397-59520ba4c16a","path":"sprites/sEnemyBigShotgunD/sEnemyBigShotgunD.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,22 +61,13 @@
     "yorigin": 96,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"sEnemyBigShotgunD","path":"sprites/sEnemyBigShotgunD/sEnemyBigShotgunD.yy",},
-    "resourceVersion": "1.4",
-    "name": "sEnemyBigShotgunD",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"ab24205e-7383-414a-8191-89c81e89c069","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"ab24205e-7383-414a-8191-89c81e89c069","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Big Robot Shotgun",
     "path": "folders/Sprites/Entities/Big Robot Enemy/Big Robot Shotgun.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "sEnemyBigShotgunD",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "sWeaponPlayerBatUR",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,13 +27,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"28ee14bf-8132-4382-8cc8-154f471931a8","path":"sprites/sWeaponPlayerBatUR/sWeaponPlayerBatUR.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"28ee14bf-8132-4382-8cc8-154f471931a8","path":"sprites/sWeaponPlayerBatUR/sWeaponPlayerBatUR.yy",},"LayerId":{"name":"58fc66c6-ba72-4687-a25d-59a66377d809","path":"sprites/sWeaponPlayerBatUR/sWeaponPlayerBatUR.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"28ee14bf-8132-4382-8cc8-154f471931a8","path":"sprites/sWeaponPlayerBatUR/sWeaponPlayerBatUR.yy",},"LayerId":{"name":"dd0dc64c-012c-4a81-b2df-fca8cdc4f64f","path":"sprites/sWeaponPlayerBatUR/sWeaponPlayerBatUR.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sWeaponPlayerBatUR","path":"sprites/sWeaponPlayerBatUR/sWeaponPlayerBatUR.yy",},"resourceVersion":"1.0","name":"28ee14bf-8132-4382-8cc8-154f471931a8","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"28ee14bf-8132-4382-8cc8-154f471931a8",},
   ],
   "sequence": {
-    "spriteId": {"name":"sWeaponPlayerBatUR","path":"sprites/sWeaponPlayerBatUR/sWeaponPlayerBatUR.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "sWeaponPlayerBatUR",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -38,12 +40,12 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 1.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"40e805cd-f696-4f85-811c-3070c120194f","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"28ee14bf-8132-4382-8cc8-154f471931a8","path":"sprites/sWeaponPlayerBatUR/sWeaponPlayerBatUR.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"40e805cd-f696-4f85-811c-3070c120194f","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"28ee14bf-8132-4382-8cc8-154f471931a8","path":"sprites/sWeaponPlayerBatUR/sWeaponPlayerBatUR.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -59,23 +61,14 @@
     "yorigin": 96,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"sWeaponPlayerBatUR","path":"sprites/sWeaponPlayerBatUR/sWeaponPlayerBatUR.yy",},
-    "resourceVersion": "1.4",
-    "name": "sWeaponPlayerBatUR",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"58fc66c6-ba72-4687-a25d-59a66377d809","tags":[],"resourceType":"GMImageLayer",},
-    {"visible":false,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Layer 1","resourceVersion":"1.0","name":"dd0dc64c-012c-4a81-b2df-fca8cdc4f64f","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"58fc66c6-ba72-4687-a25d-59a66377d809","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"dd0dc64c-012c-4a81-b2df-fca8cdc4f64f","visible":false,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Layer 1",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Spiked Bat",
     "path": "folders/Sprites/Entities/Player/Weapons/Spiked Bat.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "sWeaponPlayerBatUR",
-  "tags": [],
-  "resourceType": "GMSprite",
 }
