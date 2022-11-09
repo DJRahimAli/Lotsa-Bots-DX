@@ -1,0 +1,1 @@
+global.option = 1;
