@@ -1,10 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "oPlay",
+  "name": "oOptions",
   "spriteId": {
-    "name": "sButtonPlay",
-    "path": "sprites/sButtonPlay/sButtonPlay.yy",
+    "name": "sButtonOptions",
+    "path": "sprites/sButtonOptions/sButtonOptions.yy",
   },
   "solid": false,
   "visible": true,
