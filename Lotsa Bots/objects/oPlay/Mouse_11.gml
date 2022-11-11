@@ -1,1 +1,0 @@
-yOffsetCurrent = 0;

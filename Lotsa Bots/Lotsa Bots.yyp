@@ -120,6 +120,7 @@
     {"id":{"name":"sWave","path":"sprites/sWave/sWave.yy",},"order":7,},
     {"id":{"name":"oBrick","path":"objects/oBrick/oBrick.yy",},"order":1,},
     {"id":{"name":"sWeaponPlayerShotgunDR","path":"sprites/sWeaponPlayerShotgunDR/sWeaponPlayerShotgunDR.yy",},"order":1,},
+    {"id":{"name":"oButton","path":"objects/oButton/oButton.yy",},"order":7,},
     {"id":{"name":"oEnemyBat","path":"objects/oEnemyBat/oEnemyBat.yy",},"order":3,},
     {"id":{"name":"sPlayerDeadD","path":"sprites/sPlayerDeadD/sPlayerDeadD.yy",},"order":0,},
     {"id":{"name":"sWeaponPlayerShootShotgunUR","path":"sprites/sWeaponPlayerShootShotgunUR/sWeaponPlayerShootShotgunUR.yy",},"order":4,},
