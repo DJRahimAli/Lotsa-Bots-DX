@@ -6,4 +6,4 @@ if ( hover )
 	for ( var i = 0; i < room_width + lineWidth; i += lineWidth ) draw_sprite( sButtonLine, button, lineX + i, bbox_top + 1 + yOffsetCurrent + 16 );
 }
 
-draw_sprite_ext( sprite_index, 0, x, yDraw + yOffsetCurrent, image_xscale, image_yscale, 0, c_white, 1 );
+draw_sprite_ext( sprite_index, 0, xDraw, yDraw + yOffsetCurrent, image_xscale, image_yscale, 0, c_white, 1 );
