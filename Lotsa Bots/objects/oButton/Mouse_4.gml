@@ -1,4 +1,4 @@
-audio_play_sound( pressSound, 4, false );
+audio_play_sound( pressSound, 4, false, 1, 0, pressPitch );
 
 //Shake
 if ( shakeMagnitude > shake )
