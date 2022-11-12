@@ -31,7 +31,7 @@
   "properties": [],
   "overriddenProperties": [
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"button","path":"objects/oButton/oButton.yy",},"objectId":{"name":"oButton","path":"objects/oButton/oButton.yy",},"value":"1",},
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"pitch","path":"objects/oButton/oButton.yy",},"objectId":{"name":"oButton","path":"objects/oButton/oButton.yy",},"value":"155.56/130.81",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"hoverPitch","path":"objects/oButton/oButton.yy",},"objectId":{"name":"oButton","path":"objects/oButton/oButton.yy",},"value":"155.56/130.81",},
   ],
   "parent": {
     "name": "DXtitle",

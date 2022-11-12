@@ -1,4 +1,4 @@
-audio_play_sound( sndButtonPress, 4, false );
+audio_play_sound( pressSound, 4, false );
 
 //Shake
 if ( shakeMagnitude > shake )
