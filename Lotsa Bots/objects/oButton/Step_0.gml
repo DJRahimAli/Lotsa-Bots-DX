@@ -1,10 +1,10 @@
 if ( hover )
 {
-	yDraw = approach( yDraw, y + yOffsetCurrent, accel );
+	yOffsetCurrent = approach( yOffsetCurrent, yOffset, accel );
 }
 else
 {
-	yDraw = approach( yDraw, y, decel );
+	yOffsetCurrent = approach( yOffsetCurrent, 0, decel );
 }
 
 lineX += lineSpeed;
