@@ -64,6 +64,7 @@
     {"id":{"name":"sBrick","path":"sprites/sBrick/sBrick.yy",},"order":19,},
     {"id":{"name":"oPauseManager","path":"objects/oPauseManager/oPauseManager.yy",},"order":24,},
     {"id":{"name":"sEnemyBigBatUR","path":"sprites/sEnemyBigBatUR/sEnemyBigBatUR.yy",},"order":3,},
+    {"id":{"name":"sndButtonPress","path":"sounds/sndButtonPress/sndButtonPress.yy",},"order":17,},
     {"id":{"name":"sWall","path":"sprites/sWall/sWall.yy",},"order":14,},
     {"id":{"name":"sWeaponPlayerBatUR","path":"sprites/sWeaponPlayerBatUR/sWeaponPlayerBatUR.yy",},"order":3,},
     {"id":{"name":"sBrickParticle","path":"sprites/sBrickParticle/sBrickParticle.yy",},"order":33,},

@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSound",
   "resourceVersion": "1.0",
-  "name": "sndButton",
+  "name": "sndButtonPress",
   "conversionMode": 0,
   "compression": 0,
   "volume": 1.0,
@@ -14,7 +14,7 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "sndButton.wav",
+  "soundFile": "sndButtonPress.wav",
   "duration": 0.115374,
   "parent": {
     "name": "Sounds",
