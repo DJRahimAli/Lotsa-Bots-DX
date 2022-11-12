@@ -44,7 +44,6 @@
     {"id":{"name":"musWave3","path":"sounds/musWave3/musWave3.yy",},"order":3,},
     {"id":{"name":"sEnemyBigSMGU","path":"sprites/sEnemyBigSMGU/sEnemyBigSMGU.yy",},"order":4,},
     {"id":{"name":"oPixel","path":"objects/oPixel/oPixel.yy",},"order":15,},
-    {"id":{"name":"oPlayaa","path":"objects/oPlayaa/oPlayaa.yy",},"order":20,},
     {"id":{"name":"oWaveManager","path":"objects/oWaveManager/oWaveManager.yy",},"order":5,},
     {"id":{"name":"sEnemyBigD","path":"sprites/sEnemyBigD/sEnemyBigD.yy",},"order":0,},
     {"id":{"name":"sPlayerD","path":"sprites/sPlayerD/sPlayerD.yy",},"order":0,},
