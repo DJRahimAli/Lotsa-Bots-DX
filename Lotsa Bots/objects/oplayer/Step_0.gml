@@ -55,17 +55,11 @@ if ( playerStateCurrent == playerstate.idle )
 		if ( hAccelCurrent == -1 )
 		{
 			hspPlayer = hspMaxCurrent * hDir;
-					
-			//Clamp Horizontal Speed to Max Horizontal Speed
-			hspPlayer = clamp( hspPlayer, -hspMaxCurrent * abs( hDir ), hspMaxCurrent * abs( hDir ) );
 		}
 		else
 		{
 			//Acceleration
-			hspPlayer += hAccelCurrent * hDir;
-					
-			//Clamp Horizontal Speed to Max Horizontal Speed
-			hspPlayer = clamp( hspPlayer, -hspMaxCurrent * abs( hDir ), hspMaxCurrent * abs( hDir ) );
+			hspPlayer = approach( hspPlayer, hspMaxCurrent * hDir, hAccelCurrent );
 		}
 	}
 
@@ -112,17 +106,11 @@ if ( playerStateCurrent == playerstate.idle )
 		if ( vAccelCurrent == -1 )
 		{
 			vspPlayer = vspMaxCurrent * vDir;
-					
-			//Clamp Horizontal Speed to Max Horizontal Speed
-			vspPlayer = clamp( vspPlayer, -vspMaxCurrent * abs( vDir ), vspMaxCurrent * abs( vDir ) );
 		}
 		else
 		{
 			//Acceleration
-			vspPlayer += vAccelCurrent * vDir;
-					
-			//Clamp Horizontal Speed to Max Horizontal Speed
-			vspPlayer = clamp( vspPlayer, -vspMaxCurrent * abs( vDir ), vspMaxCurrent * abs( vDir ) );
+			vspPlayer = approach( vspPlayer, vspMaxCurrent * vDir, vAccelCurrent );
 		}
 	}
 
