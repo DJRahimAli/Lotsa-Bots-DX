@@ -47,7 +47,7 @@ if ( playerStateCurrent == playerstate.idle )
 		else
 		{
 			//Deceleration
-			hspPlayer = approach( hspPlayer, 0, hDecelCurrent );
+			hspPlayer = lerp( hspPlayer, 0, hDecelCurrent );
 		}
 	}
 	else
@@ -59,7 +59,7 @@ if ( playerStateCurrent == playerstate.idle )
 		else
 		{
 			//Acceleration
-			hspPlayer = approach( hspPlayer, hspMaxCurrent * hDir, hAccelCurrent );
+			hspPlayer = lerp( hspPlayer, hspMaxCurrent * hDir, hAccelCurrent );
 		}
 	}
 
@@ -98,7 +98,7 @@ if ( playerStateCurrent == playerstate.idle )
 		else
 		{
 			//Deceleration
-			vspPlayer = approach( vspPlayer, 0, vDecelCurrent );
+			vspPlayer = lerp( vspPlayer, 0, vDecelCurrent );
 		}
 	}
 	else
@@ -110,13 +110,29 @@ if ( playerStateCurrent == playerstate.idle )
 		else
 		{
 			//Acceleration
-			vspPlayer = approach( vspPlayer, vspMaxCurrent * vDir, vAccelCurrent );
+			vspPlayer = lerp( vspPlayer, vspMaxCurrent * vDir, vAccelCurrent );
 		}
 	}
 
 	vsp = ( vspPlayer );
-
-
+	
+	
+	var hspFloat = hsp;
+	var vspFloat = vsp;
+	
+	if ( !noclip )
+	{
+		//Horizontal Collision
+		if ( place_meeting( x + sign( hsp ), y, oCollision ) ) hspFloat = 0;
+		
+		//Vertical Collision
+		if ( place_meeting( x, y + sign( vsp ), oCollision ) ) vspFloat = 0;
+	}
+	
+	//Player Direction
+	pDir = point_direction(0, 0, hspFloat, vspFloat );
+	
+	
 	//Re apply fractions
 	hsp += hspFraction;
 	vsp += vspFraction;
@@ -156,7 +172,8 @@ if ( playerStateCurrent == playerstate.idle )
 		x += hsp;
 		y += vsp;
 	}
-
+	
+	
 	image_speed = clamp(abs(abs(hsp) + abs(vsp)), 0, 1);
 	if ( abs(hsp) + abs(vsp) == 0 )
 	{
@@ -169,7 +186,6 @@ if ( playerStateCurrent == playerstate.idle )
 	var array = weapon[weaponCurrent];
 	
 	mDir = point_direction( x, y, mouse_x, mouse_y );
-	pDir = point_direction(0, 0, sign(hsp), sign(vsp) );
 	
 	switch (weaponStateCurrent)
 	{
