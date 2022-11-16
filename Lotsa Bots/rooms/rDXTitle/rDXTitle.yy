@@ -17,7 +17,7 @@
   ],
   "layers": [
     {"resourceType":"GMRAssetLayer","resourceVersion":"1.0","name":"Assets","assets":[
-        {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_BF40932","spriteId":{"name":"sLogo","path":"sprites/sLogo/sLogo.yy",},"headPosition":0.0,"rotation":0.0,"scaleX":0.35,"scaleY":0.35,"animationSpeed":1.0,"colour":4294967295,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":0.0,},
+        {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_BF40932","spriteId":{"name":"sLogo","path":"sprites/sLogo/sLogo.yy",},"headPosition":0.0,"rotation":0.0,"scaleX":0.35,"scaleY":0.35,"animationSpeed":1.0,"colour":4294967295,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":13.0,},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Layer1","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7689E12D","properties":[],"isDnd":false,"objectId":{"name":"oPlay","path":"objects/oPlay/oPlay.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":0.55,"scaleY":0.55,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":24.0,"y":204.0,},
