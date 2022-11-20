@@ -39,6 +39,7 @@
     {"id":{"name":"cos_oscillate","path":"scripts/cos_oscillate/cos_oscillate.yy",},"order":5,},
     {"id":{"name":"sAnalogueStick","path":"sprites/sAnalogueStick/sAnalogueStick.yy",},"order":6,},
     {"id":{"name":"sEnemyBigSMGD","path":"sprites/sEnemyBigSMGD/sEnemyBigSMGD.yy",},"order":0,},
+    {"id":{"name":"rTemplate","path":"rooms/rTemplate/rTemplate.yy",},"order":3,},
     {"id":{"name":"sTiles","path":"sprites/sTiles/sTiles.yy",},"order":13,},
     {"id":{"name":"sArrowu","path":"sprites/sArrowu/sArrowu.yy",},"order":1,},
     {"id":{"name":"sndPickup","path":"sounds/sndPickup/sndPickup.yy",},"order":11,},
@@ -222,13 +223,14 @@
     "children": [],
   },
   "RoomOrderNodes": [
+    {"roomId":{"name":"rInit","path":"rooms/rInit/rInit.yy",},},
+    {"roomId":{"name":"rTemplate","path":"rooms/rTemplate/rTemplate.yy",},},
     {"roomId":{"name":"rDXTitle","path":"rooms/rDXTitle/rDXTitle.yy",},},
     {"roomId":{"name":"rTitle","path":"rooms/rTitle/rTitle.yy",},},
     {"roomId":{"name":"rWhiteArena","path":"rooms/rWhiteArena/rWhiteArena.yy",},},
     {"roomId":{"name":"rBlueArena","path":"rooms/rBlueArena/rBlueArena.yy",},},
     {"roomId":{"name":"rRedArena","path":"rooms/rRedArena/rRedArena.yy",},},
     {"roomId":{"name":"rEnding","path":"rooms/rEnding/rEnding.yy",},},
-    {"roomId":{"name":"rInit","path":"rooms/rInit/rInit.yy",},},
   ],
   "Folders": [
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Animation Curves","folderPath":"folders/Animation Curves.yy","order":12,},

@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "oSpawnerWave",
   "spriteId": {
     "name": "sSpawnerEnemy",
     "path": "sprites/sSpawnerEnemy/sSpawnerEnemy.yy",
@@ -28,8 +31,4 @@
     "name": "Objects",
     "path": "folders/Objects.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "oSpawnerWave",
-  "tags": [],
-  "resourceType": "GMObject",
 }
