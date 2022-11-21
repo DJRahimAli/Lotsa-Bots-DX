@@ -1,7 +1,7 @@
 {
   "resourceType": "GMProject",
   "resourceVersion": "1.6",
-  "name": "Lotsa Bots",
+  "name": "Lotsa Bots DX",
   "resources": [
     {"id":{"name":"sArrowr","path":"sprites/sArrowr/sArrowr.yy",},"order":0,},
     {"id":{"name":"sPause","path":"sprites/sPause/sPause.yy",},"order":4,},
