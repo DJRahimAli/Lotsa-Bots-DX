@@ -225,8 +225,8 @@
   "RoomOrderNodes": [
     {"roomId":{"name":"rInit","path":"rooms/rInit/rInit.yy",},},
     {"roomId":{"name":"rTest","path":"rooms/rTest/rTest.yy",},},
-    {"roomId":{"name":"rBlueArena","path":"rooms/rBlueArena/rBlueArena.yy",},},
     {"roomId":{"name":"rWhiteArena","path":"rooms/rWhiteArena/rWhiteArena.yy",},},
+    {"roomId":{"name":"rBlueArena","path":"rooms/rBlueArena/rBlueArena.yy",},},
     {"roomId":{"name":"rRedArena","path":"rooms/rRedArena/rRedArena.yy",},},
     {"roomId":{"name":"rDXTitle","path":"rooms/rDXTitle/rDXTitle.yy",},},
     {"roomId":{"name":"rTitle","path":"rooms/rTitle/rTitle.yy",},},
