@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "oBrick",
   "spriteId": {
     "name": "sBrick",
     "path": "sprites/sBrick/sBrick.yy",
@@ -25,10 +28,10 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"oHurtbox","path":"objects/oHurtbox/oHurtbox.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"oHurtboxEnemy","path":"objects/oHurtboxEnemy/oHurtboxEnemy.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"oHurtbox","path":"objects/oHurtbox/oHurtbox.yy",},},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"oHurtboxEnemy","path":"objects/oHurtboxEnemy/oHurtboxEnemy.yy",},},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -36,8 +39,4 @@
     "name": "Collision",
     "path": "folders/Objects/Collision.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "oBrick",
-  "tags": [],
-  "resourceType": "GMObject",
 }
