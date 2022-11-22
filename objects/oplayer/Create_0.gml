@@ -131,6 +131,6 @@ for (var i = 0; i < character.size; i++)
 
 instance_create_depth( 0, 0, depth-1, oWeapon );
 
-sequenceUI = layer_sequence_create( "Controls", 0, 0, sqUI );
+sequenceUI = layer_sequence_create( "Assets2", 0, 0, sqUI );
 
-if ( global.mobileControls ) sequenceControls = layer_sequence_create( "Controls", 0, 0, sqControls );
+if ( global.mobileControls ) sequenceControls = layer_sequence_create( "Assets2", 0, 0, sqControls );
