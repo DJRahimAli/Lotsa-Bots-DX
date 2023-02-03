@@ -116,6 +116,11 @@ if ( playerStateCurrent == playerstate.idle )
 
 	vsp = ( vspPlayer );
 	
+	hspReal = hsp;
+	vspReal = vsp;
+	
+	if (hsp == 0) hspFraction = 0;
+	if (vsp == 0) vspFraction = 0;
 	
 	var hspFloat = hsp;
 	var vspFloat = vsp;
@@ -123,10 +128,10 @@ if ( playerStateCurrent == playerstate.idle )
 	if ( !noclip )
 	{
 		//Horizontal Collision
-		if ( place_meeting( x + sign( hsp ), y, oCollision ) ) hspFloat = 0;
+		if ( place_meeting( round( x ) + ceil_signed( hspReal ), round( y ), oCollision ) ) hspFloat = 0;
 		
 		//Vertical Collision
-		if ( place_meeting( x, y + sign( vsp ), oCollision ) ) vspFloat = 0;
+		if ( place_meeting( round( x ), round( y ) + ceil_signed( vspReal ), oCollision ) ) vspFloat = 0;
 	}
 	
 	//Player Direction
@@ -136,34 +141,39 @@ if ( playerStateCurrent == playerstate.idle )
 	//Re apply fractions
 	hsp += hspFraction;
 	vsp += vspFraction;
-
+	
 	//Store and Remove fractions
 	//Important: go into collision with whole integers ONLY!
 	hspFraction = hsp - (floor(abs(hsp)) * sign(hsp));
 	hsp -= hspFraction;
+	
 	vspFraction = vsp - (floor(abs(vsp)) * sign(vsp));
 	vsp -= vspFraction;
-
-
+	
+	
 	if ( keyNoclip ) noclip = !noclip;
-
+	
 	if ( !noclip )
 	{
 		//Horizontal Collision
-		if ( place_meeting( round( x ) + ceil_signed( hsp ), round( y ), oCollision ) )
+		if ( place_meeting( round( x ) + ceil_signed( hspReal ), round( y ), oCollision ) )
 		{
-			while( !place_meeting( x + sign( hsp ), y, oCollision) ) x += sign( hsp );
-			hspPlayer = 0;
+			while( !place_meeting( x + sign( hspReal ), y, oCollision) ) x += sign( hspReal );
 			hsp = 0;
+			hspPlayer = 0;
+			hspReal = 0;
+			hspFraction = 0;
 		}
 		x += hsp;
 	
 		//Vertical Collision
-		if ( place_meeting( round( x ), round( y ) + ceil_signed( vsp ), oCollision ) )
+		if ( place_meeting( round( x ), round( y ) + ceil_signed( vspReal ), oCollision ) )
 		{
-			while( !place_meeting(x, y + sign( vsp ), oCollision ) ) y += sign( vsp );
-			vspPlayer = 0;
+			while( !place_meeting(x, y + sign( vspReal ), oCollision ) ) y += sign( vspReal );
 			vsp = 0;
+			vspPlayer = 0;
+			vspReal = 0;
+			vspFraction = 0;
 		}
 		y += vsp;
 	}

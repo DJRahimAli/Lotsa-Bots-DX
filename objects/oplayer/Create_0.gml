@@ -36,6 +36,7 @@ deadzone = 0.2;
 #region Movement Code
 hsp = 0;
 hspPlayer = 0;
+hspReal = 0;
 hspFraction = 0;
 
 
@@ -51,6 +52,7 @@ hDecelCurrent = 0.2;
 
 vsp = 0;
 vspPlayer = 0;
+vspReal = 0;
 vspFraction = 0;
 
 
