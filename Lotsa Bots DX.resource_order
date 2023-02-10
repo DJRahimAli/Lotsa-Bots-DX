@@ -78,6 +78,7 @@
     {"name":"oPixel","order":15,"path":"objects/oPixel/oPixel.yy",},
     {"name":"oWaveManager","order":5,"path":"objects/oWaveManager/oWaveManager.yy",},
     {"name":"sPlayerDR","order":1,"path":"sprites/sPlayerDR/sPlayerDR.yy",},
+    {"name":"oOptionText","order":8,"path":"objects/oOptionText/oOptionText.yy",},
     {"name":"sArrayPortrait","order":20,"path":"sprites/sArrayPortrait/sArrayPortrait.yy",},
     {"name":"sWeaponPlayerShotgunUR","order":4,"path":"sprites/sWeaponPlayerShotgunUR/sWeaponPlayerShotgunUR.yy",},
     {"name":"oCamera","order":1,"path":"objects/oCamera/oCamera.yy",},
