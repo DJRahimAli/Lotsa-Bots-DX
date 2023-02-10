@@ -6,3 +6,14 @@ shader_reset();
 
 
 draw_sprite( sArrayPose, pose, 0, 0 );
+
+
+//establishing essential code for the text and drawing it 
+draw_set_font(fntSilver);
+
+draw_set_halign(fa_center);
+draw_set_valign(fa_middle);
+
+
+//Drawing the string value in Optionstring
+draw_text(optionText[0], optionText[1], string(optionText[2]));
