@@ -12,8 +12,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "DXtitle",
-    "path": "folders/Objects/DXtitle.yy",
+    "name": "Title",
+    "path": "folders/Objects/Title.yy",
   },
   "parentObjectId": null,
   "persistent": false,

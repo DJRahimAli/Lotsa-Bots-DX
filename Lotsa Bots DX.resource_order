@@ -7,7 +7,7 @@
     {"name":"Notes","order":13,"path":"folders/Notes.yy",},
     {"name":"Objects","order":9,"path":"folders/Objects.yy",},
     {"name":"Collision","order":13,"path":"folders/Objects/Collision.yy",},
-    {"name":"DXtitle","order":27,"path":"folders/Objects/DXtitle.yy",},
+    {"name":"Title","order":27,"path":"folders/Objects/Title.yy",},
     {"name":"Paths","order":4,"path":"folders/Paths.yy",},
     {"name":"Rooms","order":10,"path":"folders/Rooms.yy",},
     {"name":"Arenas","order":2,"path":"folders/Rooms/Arenas.yy",},

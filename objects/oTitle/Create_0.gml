@@ -1,10 +1,15 @@
 var layerID = layer_get_id("Background")
 bgID = layer_background_get_id(layerID);
-pose = 0;
+
+portrait = 0;
+portraitWidth = sprite_get_width(sArrayPortrait);
+portraitHeight = sprite_get_height(sArrayPortrait);
+
+surf = -1;
 audio_play_sound(musTitle, 1, 2);
 
-
-cooldownCurrent = 0;
+cooldown = 60*3;
+cooldownCurrent = cooldown;
 
 
 optionString =
@@ -16,6 +21,9 @@ optionString =
 };
 
 optionText = optionString.def;
+
+mousexChanged = mouse_x;
+mouseyChanged = mouse_y;
 
 /* "What's this" code
 array =

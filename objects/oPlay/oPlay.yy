@@ -10,8 +10,8 @@
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oButton","path":"objects/oButton/oButton.yy",},"propertyId":{"name":"hoverPitch","path":"objects/oButton/oButton.yy",},"value":"233.08/174.61",},
   ],
   "parent": {
-    "name": "DXtitle",
-    "path": "folders/Objects/DXtitle.yy",
+    "name": "Title",
+    "path": "folders/Objects/Title.yy",
   },
   "parentObjectId": {
     "name": "oButton",
