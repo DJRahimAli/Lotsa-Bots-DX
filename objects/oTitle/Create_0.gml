@@ -22,6 +22,10 @@ optionString =
 
 optionText = optionString.def;
 
+
+fadeinAmount = 0.1;
+fadeoutAmount = 0.1;
+
 mousexChanged = mouse_x;
 mouseyChanged = mouse_y;
 

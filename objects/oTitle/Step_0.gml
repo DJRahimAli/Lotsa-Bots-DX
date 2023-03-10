@@ -27,9 +27,6 @@ if ( array[arrayCurrent,0] == -2 && is_real(array[arrayCurrent,0]) )
 	textAmountCurrent = textAmount;
 }*/
 
-var fadeinAmount = 0.1;
-var fadeoutAmount = 0.1;
-
 //Fade in
 if ( cooldownCurrent > 0 )
 {
