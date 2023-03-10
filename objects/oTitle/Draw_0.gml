@@ -15,14 +15,14 @@ shader_reset();
 
 //Draw overlap
 gpu_set_blendmode(bm_subtract);
-draw_sprite(sArrayPortrait, portrait, 0, 0);
+draw_sprite_ext(sArrayPortrait, portrait, 0, 0, 1, 1, 0, c_white, 1);
 gpu_set_blendmode(bm_normal);
 
 //Reset target
 surface_reset_target();
 
 //Draw surface
-draw_surface_ext( surf, 0, 0, 1, 1, 0, make_color_rgb(0, 20, 64), 0.5*image_alpha );
+draw_surface_ext( surf, 0, 0, 1, 1, 0, make_color_rgb(0, 20, 64), 0.5/image_alpha );
 
 //Reset surface
 surf = -1;
