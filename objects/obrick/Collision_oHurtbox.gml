@@ -19,7 +19,6 @@ if (cooldown = 0)
 	if ( hp != 0 )
 	{
 		if ( !audio_is_playing(sndBulletHitWall) ) audio_play_sound(sndBulletHitWall, 0, false);
-		sprite_index = sBrickBreak;
 		if ( hp < image_number ) image_index++;
 		image_speed = 0;
 	}

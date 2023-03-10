@@ -27,8 +27,8 @@
   "nineSlice": null,
   "origin": 2,
   "parent": {
-    "name": "DXtitlescreen",
-    "path": "folders/Sprites/DXtitlescreen.yy",
+    "name": "Title",
+    "path": "folders/Sprites/Title.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
