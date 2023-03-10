@@ -27,7 +27,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "sLogo",
+    "path": "sprites/sLogo/sLogo.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }

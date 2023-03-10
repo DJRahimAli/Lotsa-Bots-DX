@@ -124,6 +124,7 @@
     {"name":"sArrowul","order":2,"path":"sprites/sArrowul/sArrowul.yy",},
     {"name":"sEnemySaw","order":10,"path":"sprites/sEnemySaw/sEnemySaw.yy",},
     {"name":"sWeaponPlayerBatD","order":1,"path":"sprites/sWeaponPlayerBatD/sWeaponPlayerBatD.yy",},
+    {"name":"oEnemy","order":6,"path":"objects/oEnemy/oEnemy.yy",},
     {"name":"sqFadeIn","order":3,"path":"sequences/sqFadeIn/sqFadeIn.yy",},
     {"name":"sWeaponPlayerBatU","order":2,"path":"sprites/sWeaponPlayerBatU/sWeaponPlayerBatU.yy",},
     {"name":"sWeaponPlayerBatSwingDR","order":1,"path":"sprites/sWeaponPlayerBatSwingDR/sWeaponPlayerBatSwingDR.yy",},

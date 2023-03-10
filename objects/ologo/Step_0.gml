@@ -1,1 +1,1 @@
-y = round( ystart + sin_oscillate(-5, 5, 2) );
+y = ystart + sin_oscillate(-5, 5, 4);
