@@ -10,6 +10,7 @@ shakeLength = 15;
 shakeMagnitude = 12;
 
 hover = false;
+clicked = false;
 
 //accel = 0.5;
 //decel = 1;
@@ -17,3 +18,6 @@ hover = false;
 lineX = 0;
 //lineSpeed = 5;
 lineWidth = sprite_get_width(sButtonLine);
+lineHeight = sprite_get_height(sButtonLine);
+
+surface = surface_create(room_width, room_height);

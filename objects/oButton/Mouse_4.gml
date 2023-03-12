@@ -1,7 +1,12 @@
-audio_play_sound( pressSound, 4, false, 1, 0, pressPitch );
-
-//Shake
-if ( shakeMagnitude > shake )
+if (!oButton.clicked)
 {
-	shake = shakeMagnitude;
+	audio_play_sound( pressSound, 4, false, 1, 0, pressPitch );
+	
+	//Shake
+	if ( shakeMagnitude > shake )
+	{
+		shake = shakeMagnitude;
+	}
 }
+
+oButton.clicked = true;

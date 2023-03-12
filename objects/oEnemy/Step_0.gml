@@ -12,12 +12,10 @@ if (hpCurrent != hpLast)
 	hpLast = hpCurrent;
 }
 
-wall_escape( oParEnemy );
-
 #region Weapon State
 var array = weapon[weaponCurrent];
 	
-if ( instance_exists(target) ) mDir = point_direction( x, y, target.x, target.y );
+//if ( instance_exists(target) ) mDir = point_direction( x, y, target.x, target.y );
 var Diff = angle_difference( mDir, direction );
 
 direction += Diff * angleAimDelay;
@@ -26,12 +24,14 @@ cooldown = max( 0, cooldown-1 );
 			
 if ( cooldown != 0 )
 {
+	//enemystate = idle or whatv
 	if ( image_index == image_number-1 ) image_speed = 0;
 }
 else
 {
 	if ( distance_to_object(oPlayer) <= 100 )
 	{
+		//enemystate = attack or whatv
 		image_speed = 1;
 		cooldown = weapon[weaponCurrent][weaponvars.cooldown];
 		repeat(weapon[weaponCurrent][weaponvars.amount])

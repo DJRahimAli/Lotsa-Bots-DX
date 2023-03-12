@@ -1,12 +1,5 @@
 audio_play_sound( sndEnemySpawn, 4, false );
 
-hp = 50;
-hpCurrent = hp;
-hpLast = hpCurrent;
-
-target = oPlayer;
-
-
 flashAlphaSpawn = 0.8;
 flashAlphaHurt = 0.8;
 flashAlphaCurrent = flashAlphaSpawn;
@@ -17,6 +10,18 @@ flashSubtractHurt = 0.1;
 flashColorSpawn = c_red;
 flashColorHurt = c_white;
 flashColorCurrent = flashColorSpawn;
+
+hp = 50;
+hpCurrent = hp;
+hpLast = hpCurrent;
+
+
+alert = false;
+alertDistance = 100;
+
+alertCooldown = 60*3;
+alertCooldownCurrent = alertCooldown;
+
 
 #region Movement Code
 hsp = 0;

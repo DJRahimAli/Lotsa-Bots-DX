@@ -2,10 +2,8 @@ var layerID = layer_get_id("Background")
 bgID = layer_background_get_id(layerID);
 
 portrait = 0;
-portraitWidth = sprite_get_width(sArrayPortrait);
-portraitHeight = sprite_get_height(sArrayPortrait);
+surface = surface_create(room_width, room_height);
 
-surf = -1;
 audio_play_sound(musTitle, 1, 2);
 
 cooldown = 60*3;
@@ -26,8 +24,8 @@ optionText = optionString.def;
 fadeinAmount = 0.02;
 fadeoutAmount = 0.02;
 
-mousexChanged = mouse_x;
-mouseyChanged = mouse_y;
+mousexPrevious = mouse_x;
+mouseyPrevious = mouse_y;
 
 /* "What's this" code
 array =

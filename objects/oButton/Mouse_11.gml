@@ -1,1 +1,1 @@
-hover = false;
+if (!oButton.clicked) hover = false;

@@ -47,9 +47,7 @@ if ( cooldownCurrent <= 0 )
 }
 
 //Reset cooldown
-if ( mousexChanged != mouse_x || mouseyChanged != mouse_y )
-{
-	mousexChanged = mouse_x;
-	mouseyChanged = mouse_y;
-	cooldownCurrent = cooldown;
-}
+if ( (mousexPrevious != mouse_x || mouseyPrevious != mouse_y) || device_mouse_check_button(0,mb_left) ) cooldownCurrent = cooldown;
+
+mousexPrevious = mouse_x;
+mouseyPrevious = mouse_y;
