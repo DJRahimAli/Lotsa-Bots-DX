@@ -15,7 +15,9 @@ shader_reset();
 
 //Draw overlap
 gpu_set_blendmode(bm_subtract);
+shader_set(shFlash);
 draw_sprite_ext(sArrayPortrait, portrait, 0, 0, 1, 1, 0, c_white, 1);
+shader_reset();
 gpu_set_blendmode(bm_normal);
 
 //Reset target

@@ -32,8 +32,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sEnemyBigSwingBatD",
-    "path": "sprites/sEnemyBigSwingBatD/sEnemyBigSwingBatD.yy",
+    "name": "sEnemyBigBatD",
+    "path": "sprites/sEnemyBigBatD/sEnemyBigBatD.yy",
   },
   "spriteMaskId": null,
   "visible": true,
