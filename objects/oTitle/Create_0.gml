@@ -23,6 +23,10 @@ optionText = optionString.def;
 
 fadeinAmount = 0.02;
 fadeoutAmount = 0.02;
+fadeoutAmountClicked = 0.04;
+
+fadeinAmountCurrent = fadeinAmount;
+fadeoutAmountCurrent = fadeoutAmount;
 
 mousexPrevious = mouse_x;
 mouseyPrevious = mouse_y;
