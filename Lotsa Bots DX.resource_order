@@ -159,6 +159,7 @@
     {"name":"sArena","order":7,"path":"sprites/sArena/sArena.yy",},
     {"name":"sEnemyBigUR","order":4,"path":"sprites/sEnemyBigUR/sEnemyBigUR.yy",},
     {"name":"sWeaponPlayerShootSMGDR","order":1,"path":"sprites/sWeaponPlayerShootSMGDR/sWeaponPlayerShootSMGDR.yy",},
+    {"name":"sqUI8","order":12,"path":"sequences/sqUI8/sqUI8.yy",},
     {"name":"sButtonCredits","order":6,"path":"sprites/sButtonCredits/sButtonCredits.yy",},
     {"name":"sqFadeOutGui","order":10,"path":"sequences/sqFadeOutGui/sqFadeOutGui.yy",},
     {"name":"oPause","order":18,"path":"objects/oPause/oPause.yy",},

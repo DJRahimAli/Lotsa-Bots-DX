@@ -193,6 +193,7 @@
     {"id":{"name":"sArena","path":"sprites/sArena/sArena.yy",},},
     {"id":{"name":"sEnemyBigUR","path":"sprites/sEnemyBigUR/sEnemyBigUR.yy",},},
     {"id":{"name":"sWeaponPlayerShootSMGDR","path":"sprites/sWeaponPlayerShootSMGDR/sWeaponPlayerShootSMGDR.yy",},},
+    {"id":{"name":"sqUI8","path":"sequences/sqUI8/sqUI8.yy",},},
     {"id":{"name":"sButtonCredits","path":"sprites/sButtonCredits/sButtonCredits.yy",},},
     {"id":{"name":"sqFadeOutGui","path":"sequences/sqFadeOutGui/sqFadeOutGui.yy",},},
     {"id":{"name":"oPause","path":"objects/oPause/oPause.yy",},},

@@ -4,7 +4,7 @@ if (pause && pauseCurrent)
 
 	instance_deactivate_all(true);
 	
-	instance_create_layer( 224, 106, "Layer1", oBack );
+	instance_create_layer( 224, 106, "Layer1", oQuit );
 	
 	pauseCurrent = false;
 }
