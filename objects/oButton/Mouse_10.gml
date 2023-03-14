@@ -4,5 +4,6 @@ if (!oButton.clicked)
 	audio_play_sound( hoverSound, 4, false, 1, 0, hoverPitch );
 	layer_background_index(oTitle.bgID, button);
 	oTitle.portrait = button;
+	oButton.buttonCurrent = button;
 	hover = true;
 }
