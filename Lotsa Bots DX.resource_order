@@ -137,6 +137,7 @@
     {"name":"sWeaponPlayerShotgunR","order":2,"path":"sprites/sWeaponPlayerShotgunR/sWeaponPlayerShotgunR.yy",},
     {"name":"sndShotgun","order":14,"path":"sounds/sndShotgun/sndShotgun.yy",},
     {"name":"oHurtboxEnemy","order":26,"path":"objects/oHurtboxEnemy/oHurtboxEnemy.yy",},
+    {"name":"oData","order":29,"path":"objects/oData/oData.yy",},
     {"name":"sWeaponPlayerBatSwingU","order":4,"path":"sprites/sWeaponPlayerBatSwingU/sWeaponPlayerBatSwingU.yy",},
     {"name":"sWeaponPlayerSMGU","order":3,"path":"sprites/sWeaponPlayerSMGU/sWeaponPlayerSMGU.yy",},
     {"name":"sTitleBackground","order":3,"path":"sprites/sTitleBackground/sTitleBackground.yy",},

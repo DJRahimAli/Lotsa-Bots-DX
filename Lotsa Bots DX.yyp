@@ -169,6 +169,7 @@
     {"id":{"name":"sWeaponPlayerShotgunR","path":"sprites/sWeaponPlayerShotgunR/sWeaponPlayerShotgunR.yy",},},
     {"id":{"name":"sndShotgun","path":"sounds/sndShotgun/sndShotgun.yy",},},
     {"id":{"name":"oHurtboxEnemy","path":"objects/oHurtboxEnemy/oHurtboxEnemy.yy",},},
+    {"id":{"name":"oData","path":"objects/oData/oData.yy",},},
     {"id":{"name":"sWeaponPlayerBatSwingU","path":"sprites/sWeaponPlayerBatSwingU/sWeaponPlayerBatSwingU.yy",},},
     {"id":{"name":"sWeaponPlayerSMGU","path":"sprites/sWeaponPlayerSMGU/sWeaponPlayerSMGU.yy",},},
     {"id":{"name":"sTitleBackground","path":"sprites/sTitleBackground/sTitleBackground.yy",},},
