@@ -1,3 +1,5 @@
+instance_create_layer( x, y, layer, oCamera );
+
 audio_play_sound( sndPlayerSpawn, 5, false );
 
 flashAlphaSpawn = 0.8;
