@@ -8,6 +8,9 @@ audio_play_sound(musTitle, 1, 2);
 
 cooldown = 60*3;
 cooldownCurrent = cooldown;
+oLogo.image_alpha = 0;
+oButton.image_alpha = 0;
+oTitle.image_alpha = 0;
 
 
 optionString =

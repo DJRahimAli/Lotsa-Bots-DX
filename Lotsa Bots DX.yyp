@@ -244,6 +244,7 @@
     {"id":{"name":"oManager","path":"objects/oManager/oManager.yy",},},
     {"id":{"name":"sWeaponPlayerShotgunU","path":"sprites/sWeaponPlayerShotgunU/sWeaponPlayerShotgunU.yy",},},
     {"id":{"name":"HTML_FullScreen","path":"extensions/HTML_FullScreen/HTML_FullScreen.yy",},},
+    {"id":{"name":"BufferFunctions","path":"scripts/BufferFunctions/BufferFunctions.yy",},},
     {"id":{"name":"oLogo","path":"objects/oLogo/oLogo.yy",},},
     {"id":{"name":"Data","path":"scripts/Data/Data.yy",},},
     {"id":{"name":"sqFadeInGui","path":"sequences/sqFadeInGui/sqFadeInGui.yy",},},

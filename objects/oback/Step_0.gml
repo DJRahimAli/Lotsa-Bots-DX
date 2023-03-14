@@ -18,6 +18,7 @@ else
 		if (position_meeting(device_mouse_x(touch_id), device_mouse_y(touch_id), id))
 		{
 			oPauseManager.pause = false;
+			oPauseManager.pauseCurrent = true;
 		}
 		touch_id = -1;
 	}

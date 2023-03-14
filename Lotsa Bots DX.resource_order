@@ -204,6 +204,7 @@
     {"name":"sWeaponPlayerShootShotgunDR","order":1,"path":"sprites/sWeaponPlayerShootShotgunDR/sWeaponPlayerShootShotgunDR.yy",},
     {"name":"oManager","order":3,"path":"objects/oManager/oManager.yy",},
     {"name":"sWeaponPlayerShotgunU","order":3,"path":"sprites/sWeaponPlayerShotgunU/sWeaponPlayerShotgunU.yy",},
+    {"name":"BufferFunctions","order":9,"path":"scripts/BufferFunctions/BufferFunctions.yy",},
     {"name":"oLogo","order":14,"path":"objects/oLogo/oLogo.yy",},
     {"name":"Data","order":4,"path":"scripts/Data/Data.yy",},
     {"name":"sqFadeInGui","order":11,"path":"sequences/sqFadeInGui/sqFadeInGui.yy",},

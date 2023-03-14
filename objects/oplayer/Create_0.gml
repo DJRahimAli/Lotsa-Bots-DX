@@ -1,13 +1,5 @@
 audio_play_sound( sndPlayerSpawn, 5, false );
 
-hp = 100;
-hpCurrent = hp;
-hpLast = hpCurrent;
-
-respawnCooldown = 120;
-respawnCooldownCurrent = respawnCooldown;
-
-
 flashAlphaSpawn = 0.8;
 flashAlphaHurt = 0.8;
 flashAlphaCurrent = flashAlphaSpawn;
@@ -18,6 +10,13 @@ flashSubtractHurt = 0.1;
 flashColorSpawn = c_blue;
 flashColorHurt = c_white;
 flashColorCurrent = flashColorSpawn;
+
+hp = 100;
+hpCurrent = hp;
+hpLast = hpCurrent;
+
+respawnCooldown = 120;
+respawnCooldownCurrent = respawnCooldown;
 
 #region Controls
 keyLeft = false;
@@ -134,5 +133,3 @@ for (var i = 0; i < character.size; i++)
 instance_create_depth( 0, 0, depth-1, oWeapon );
 
 sequenceUI = layer_sequence_create( "Assets2", 0, 0, sqUI );
-
-if ( global.mobileControls ) sequenceControls = layer_sequence_create( "Assets2", 0, 0, sqControls );
