@@ -14,18 +14,17 @@ if ( room != rTitle )
 		targetY = target.y - round(camH / 2);
 	}
 	
-	
 	// Set camera position
 	if ( CAM_SMOOTH = -1 )
 	{
-		x = targetX;
-		y = targetY;
+		x = targetX + lengthdir_x(camLengthXCurrent,target.direction);
+		y = targetY + lengthdir_y(camLengthYCurrent,target.direction);
 	}
 	else
 	{
 		// Smoothly move the camera to the target position
-		x = lerp(x, targetX, CAM_SMOOTH);
-		y = lerp(y, targetY, CAM_SMOOTH);
+		x = lerp(x, targetX + lengthdir_x(camLengthXCurrent,target.direction), CAM_SMOOTH);
+		y = lerp(y, targetY + lengthdir_y(camLengthYCurrent,target.direction), CAM_SMOOTH);
 	}
 	
 	

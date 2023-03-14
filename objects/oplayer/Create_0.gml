@@ -91,6 +91,8 @@ angleAimDelay = 0.2;
 anglePrevious = 0;
 angleInterval = ( 360 / directions );
 
+crosshairDistance = 180;
+
 //angleInterval = 45;
 //directions = ( 360 / angleInterval );
 //directions = 8;

@@ -1,5 +1,6 @@
 function EnumInit()
 {
+	#region oData
 	enum character
 	{
 		none,
@@ -99,6 +100,7 @@ function EnumInit()
 		intermission,
 		size
 	}
+	#endregion
 	
 	enum pickup
 	{

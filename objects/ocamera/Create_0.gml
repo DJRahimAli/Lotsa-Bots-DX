@@ -4,7 +4,18 @@
 
 #macro CAM_RES_W 960
 #macro CAM_RES_H 540
-#macro CAM_SMOOTH 0.2
+
+#macro CAM_SMOOTH 0.12
+
+camLengthSmooth = 0;
+
+camLengthXMin = 0;
+camLengthXMax = 50;
+camLengthXCurrent = 0;
+
+camLengthYMin = 0;
+camLengthYMax = 50;
+camLengthYCurrent = 0;
 
 // Enable views
 view_enabled = true;

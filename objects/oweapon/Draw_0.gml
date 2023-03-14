@@ -25,5 +25,3 @@ if ( oPlayer.flashAlphaCurrent != 0 )
 	
 	shader_reset();
 }
-
-draw_sprite( sCrosshair, 0, oPlayer.x + round(lengthdir_x(crosshairDistance, oPlayer.direction)), oPlayer.y + round(lengthdir_y(crosshairDistance, oPlayer.direction)) );
