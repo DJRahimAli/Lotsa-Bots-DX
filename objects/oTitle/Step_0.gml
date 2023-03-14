@@ -58,7 +58,7 @@ mouseyPrevious = mouse_y;
 if (image_alpha == 0) && (oButton.clicked && oButton.buttonCurrent == 0)
 {
 	audio_stop_all();
-	room_goto(rTest);
+	room_goto_next();
 }
 if (image_alpha == 0) && (oButton.clicked && oButton.buttonCurrent != 0)
 {

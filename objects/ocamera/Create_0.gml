@@ -24,11 +24,8 @@ view_visible[0] = true;
 // Set target object
 target = oPlayer;
 
-targetX = target.x - round(CAM_RES_W / 2);
-targetY = target.y - round(CAM_RES_H / 2);
-
-x = targetX;
-y = targetY;
+x = 0;
+y = 0;
 
 // Create camera
 camera = camera_create_view(x, y, CAM_RES_W, CAM_RES_H);

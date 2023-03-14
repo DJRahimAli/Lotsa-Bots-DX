@@ -1,4 +1,5 @@
-instance_create_layer( x, y, layer, oCamera );
+x = oSpawnerPlayer.x;
+y = oSpawnerPlayer.y - sprite_height/2;
 
 audio_play_sound( sndPlayerSpawn, 5, false );
 

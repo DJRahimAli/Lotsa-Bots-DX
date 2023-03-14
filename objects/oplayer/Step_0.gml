@@ -205,7 +205,7 @@ if ( playerStateCurrent == playerstate.idle )
 			oWeapon.image_speed = 0;
 			
 			
-			if (oCamera.camLengthSmooth != 0)
+			/*if (oCamera.camLengthSmooth != 0)
 			{
 				oCamera.camLengthXCurrent = lerp(oCamera.camLengthXCurrent, oCamera.camLengthXMin, oCamera.camLengthSmooth);
 				oCamera.camLengthYCurrent = lerp(oCamera.camLengthYCurrent, oCamera.camLengthYMin, oCamera.camLengthSmooth);
@@ -214,7 +214,7 @@ if ( playerStateCurrent == playerstate.idle )
 			{
 				oCamera.camLengthXCurrent = oCamera.camLengthXMin;
 				oCamera.camLengthYCurrent = oCamera.camLengthYMin;
-			}
+			}*/
 			
 			if (audio_is_playing(sndSMG)) audio_stop_sound( sndSMG );
 			
@@ -229,7 +229,7 @@ if ( playerStateCurrent == playerstate.idle )
 				oWeapon.image_speed = 1;
 				direction = mDir;
 				
-				if (oCamera.camLengthSmooth != 0)
+				/*if (oCamera.camLengthSmooth != 0)
 				{
 					oCamera.camLengthXCurrent = lerp(oCamera.camLengthXCurrent, oCamera.camLengthXMax, oCamera.camLengthSmooth);
 					oCamera.camLengthYCurrent = lerp(oCamera.camLengthYCurrent, oCamera.camLengthYMax, oCamera.camLengthSmooth);
@@ -238,7 +238,7 @@ if ( playerStateCurrent == playerstate.idle )
 				{
 					oCamera.camLengthXCurrent = oCamera.camLengthXMax;
 					oCamera.camLengthYCurrent = oCamera.camLengthYMax;
-				}
+				}*/
 				
 				weaponStateCurrent = weaponstate.primary;
 			}
@@ -253,11 +253,11 @@ if ( playerStateCurrent == playerstate.idle )
 		
 			direction += Diff * angleAimDelay;
 			
-			if (oCamera.camLengthSmooth != 0)
+			/*if (oCamera.camLengthSmooth != 0)
 			{
 				oCamera.camLengthXCurrent = lerp(oCamera.camLengthXCurrent, oCamera.camLengthXMax, oCamera.camLengthSmooth);
 				oCamera.camLengthYCurrent = lerp(oCamera.camLengthYCurrent, oCamera.camLengthYMax, oCamera.camLengthSmooth);
-			}
+			}*/
 			
 			cooldown = max( 0, cooldown-1 );
 			

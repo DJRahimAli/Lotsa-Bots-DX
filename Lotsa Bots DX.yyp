@@ -90,7 +90,6 @@
     {"id":{"name":"oCredits","path":"objects/oCredits/oCredits.yy",},},
     {"id":{"name":"round_positon","path":"scripts/round_positon/round_positon.yy",},},
     {"id":{"name":"ceil_signed","path":"scripts/ceil_signed/ceil_signed.yy",},},
-    {"id":{"name":"rInit","path":"rooms/rInit/rInit.yy",},},
     {"id":{"name":"sEnemyBigU","path":"sprites/sEnemyBigU/sEnemyBigU.yy",},},
     {"id":{"name":"cos_oscillate","path":"scripts/cos_oscillate/cos_oscillate.yy",},},
     {"id":{"name":"sAnalogueStick","path":"sprites/sAnalogueStick/sAnalogueStick.yy",},},
@@ -264,9 +263,8 @@
     {"id":{"name":"rWhiteArena","path":"rooms/rWhiteArena/rWhiteArena.yy",},},
   ],
   "RoomOrderNodes": [
-    {"roomId":{"name":"rInit","path":"rooms/rInit/rInit.yy",},},
-    {"roomId":{"name":"rTest","path":"rooms/rTest/rTest.yy",},},
     {"roomId":{"name":"rTitle","path":"rooms/rTitle/rTitle.yy",},},
+    {"roomId":{"name":"rTest","path":"rooms/rTest/rTest.yy",},},
     {"roomId":{"name":"rWhiteArena","path":"rooms/rWhiteArena/rWhiteArena.yy",},},
     {"roomId":{"name":"rBlueArena","path":"rooms/rBlueArena/rBlueArena.yy",},},
     {"roomId":{"name":"rRedArena","path":"rooms/rRedArena/rRedArena.yy",},},
