@@ -21,25 +21,19 @@ camLengthYCurrent = 0;
 view_enabled = true;
 view_visible[0] = true;
 
-// Create camera
-camera = camera_create_view(0, 0, CAM_RES_W, CAM_RES_H);
-
-view_set_camera(0, camera);
-
 // Set target object
 target = oPlayer;
 
-targetX = 0;
-targetY = 0;
+targetX = target.x - round(CAM_RES_W / 2);
+targetY = target.y - round(CAM_RES_H / 2);
 
-if ( instance_exists( target ) )
-{
-	targetX = target.x;
-	targetY = target.y;
-	
-	//Set camera position to the target position
-	camera_set_view_pos(camera, targetX, targetY);
-}
+x = targetX;
+y = targetY;
+
+// Create camera
+camera = camera_create_view(x, y, CAM_RES_W, CAM_RES_H);
+
+view_set_camera(0, camera);
 
 
 // Resize window & application surface
