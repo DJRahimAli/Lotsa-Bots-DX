@@ -41,22 +41,3 @@ if ( room != rTitle )
 	camera_set_view_pos(camera, x, y);
 	camera_set_view_size(camera, camW, camH);
 }
-
-
-if ( room != rTitle )
-{
-	if ( global.mobileControls && (instance_exists( oAnalogueLeft ) || instance_exists( oAnalogueRight )) )
-	{
-		oAnalogueLeft.x += oCamera.x;
-		oAnalogueLeft.y += oCamera.y;
-		
-		oAnalogueRight.x += oCamera.x;
-		oAnalogueRight.y += oCamera.y;
-	}
-	
-	if ( instance_exists( oPause ) )
-	{
-		oPause.x += oCamera.x;
-		oPause.y += oCamera.y;
-	}
-}
