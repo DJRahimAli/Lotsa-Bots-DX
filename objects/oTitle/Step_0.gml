@@ -52,3 +52,16 @@ if (!oButton.clicked) && ( (mousexPrevious != mouse_x || mouseyPrevious != mouse
 
 mousexPrevious = mouse_x;
 mouseyPrevious = mouse_y;
+
+
+//Button
+if (image_alpha == 0) && (oButton.clicked && oButton.buttonCurrent == 0)
+{
+	audio_stop_all();
+	room_goto(rTest);
+}
+if (image_alpha == 0) && (oButton.clicked && oButton.buttonCurrent != 0)
+{
+	audio_stop_all();
+	room_goto(rTitle);
+}
