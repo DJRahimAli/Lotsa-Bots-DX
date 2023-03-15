@@ -25,7 +25,7 @@ if ( playerStateCurrent == playerstate.idle )
 	
 		hDir = ( (rightInput*sign(keyRight)) - (leftInput*sign(keyLeft)) );
 	}
-	else
+	/*else
 	{
 		if ( instance_exists(oAnalogueLeft) )
 		{
@@ -35,7 +35,7 @@ if ( playerStateCurrent == playerstate.idle )
 			
 			hDir = ( Input*sign(oAnalogueLeft.hDir) );
 		}
-	}
+	}*/
 
 
 	if ( hDir == 0 )
@@ -76,7 +76,7 @@ if ( playerStateCurrent == playerstate.idle )
 	
 		vDir = ( (downInput*sign(keyDown)) - (upInput*sign(keyUp)) );
 	}
-	else
+	/*else
 	{
 		if ( instance_exists(oAnalogueLeft) )
 		{
@@ -86,7 +86,7 @@ if ( playerStateCurrent == playerstate.idle )
 			
 			vDir = ( Input*sign(oAnalogueLeft.vDir) );
 		}
-	}
+	}*/
 
 
 	if ( vDir == 0 )
@@ -248,7 +248,7 @@ if ( playerStateCurrent == playerstate.idle )
 		{
 			oWeapon.image_speed = 1;
 			
-			if ( instance_exists(oAnalogueRight) ) mDir = oAnalogueRight._direction;
+			//if ( instance_exists(oAnalogueRight) ) mDir = oAnalogueRight._direction;
 			var Diff = angle_difference( mDir, direction );
 		
 			direction += Diff * angleAimDelay;
@@ -339,7 +339,6 @@ if ( playerStateCurrent == playerstate.idle )
 			if (audio_is_playing(sndSMG)) audio_stop_sound( sndSMG );
 			instance_destroy(oWeapon);
 			image_speed = 1;
-			if ( global.mobileControls ) layer_sequence_destroy(sequenceControls);
 			hpLast = 0;
 		}
 		if (hpCurrent < hpLast)

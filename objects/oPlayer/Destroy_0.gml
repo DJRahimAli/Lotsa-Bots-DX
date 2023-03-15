@@ -1,2 +1,2 @@
 instance_destroy( oWeapon );
-layer_sequence_destroy(sequenceUI);
+instance_create_layer(oSpawnerPlayer.x,oSpawnerPlayer.y,layer,oPlayer);
