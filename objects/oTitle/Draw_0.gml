@@ -42,3 +42,5 @@ draw_set_valign(fa_middle);
 
 //Drawing the string value in optionString
 draw_text(optionText[0], optionText[1], string(optionText[2]));
+
+draw_set_alpha(1);

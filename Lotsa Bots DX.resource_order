@@ -29,6 +29,7 @@
   ],
   "ResourceOrderSettings": [
     {"name":"sPickup","order":3,"path":"sprites/sPickup/sPickup.yy",},
+    {"name":"rInit","order":3,"path":"rooms/rInit/rInit.yy",},
     {"name":"sWallVariation","order":10,"path":"sprites/sWallVariation/sWallVariation.yy",},
     {"name":"sndSMG","order":4,"path":"sounds/sndSMG/sndSMG.yy",},
     {"name":"oSpawnerWave","order":12,"path":"objects/oSpawnerWave/oSpawnerWave.yy",},

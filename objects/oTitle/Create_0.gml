@@ -8,6 +8,7 @@ surface = surface_create(room_width, room_height);
 
 cooldown = 60*3;
 cooldownCurrent = cooldown;
+
 oLogo.image_alpha = 0;
 oButton.image_alpha = 0;
 oTitle.image_alpha = 0;
@@ -33,22 +34,3 @@ fadeoutAmountCurrent = fadeoutAmount;
 
 mousexPrevious = mouse_x;
 mouseyPrevious = mouse_y;
-
-/* "What's this" code
-array =
-[
-	["What's ", 15],
-	["this,\n", 15],
-	["what's ", 15],
-	["this,\n", 15],
-	["What's ", 15],
-	["this?\n", 35],
-	[-1,		0]
-];
-
-arrayCurrent = 0 - 1;
-
-text = "";
-
-textAmount = array_length(array);
-textAmountCurrent = textAmount;*/

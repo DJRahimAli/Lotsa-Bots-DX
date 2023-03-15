@@ -1,5 +1,3 @@
-draw_set_alpha(1);
-
 if ( hover )
 {
 	//Create surface
@@ -30,5 +28,3 @@ if ( hover )
 }
 
 draw_sprite_ext( sprite_index, 0, xDraw, yDraw + yOffsetCurrent, image_xscale, image_yscale, 0, c_white, image_alpha );
-
-

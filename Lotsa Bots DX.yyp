@@ -42,10 +42,11 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.2.0.71",
+    "IDEVersion": "2023.2.1.75",
   },
   "resources": [
     {"id":{"name":"sPickup","path":"sprites/sPickup/sPickup.yy",},},
+    {"id":{"name":"rInit","path":"rooms/rInit/rInit.yy",},},
     {"id":{"name":"sWallVariation","path":"sprites/sWallVariation/sWallVariation.yy",},},
     {"id":{"name":"sndSMG","path":"sounds/sndSMG/sndSMG.yy",},},
     {"id":{"name":"oSpawnerWave","path":"objects/oSpawnerWave/oSpawnerWave.yy",},},
@@ -108,6 +109,7 @@
     {"id":{"name":"oButton","path":"objects/oButton/oButton.yy",},},
   ],
   "RoomOrderNodes": [
+    {"roomId":{"name":"rInit","path":"rooms/rInit/rInit.yy",},},
     {"roomId":{"name":"rTitle","path":"rooms/rTitle/rTitle.yy",},},
     {"roomId":{"name":"rTest","path":"rooms/rTest/rTest.yy",},},
   ],
