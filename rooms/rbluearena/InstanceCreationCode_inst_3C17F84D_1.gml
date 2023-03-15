@@ -1,1 +1,0 @@
-arenaCurrent = arena.blue;
