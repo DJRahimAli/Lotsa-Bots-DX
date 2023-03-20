@@ -211,7 +211,7 @@ if ( playerStateCurrent == playerstate.idle )
 			
 			if (audio_is_playing(sndSMG)) audio_stop_sound( sndSMG );
 			
-			if ( hsp != 0 || vsp != 0 )
+			if ( hsp != 0 || vsp != 0 ) && ( !keySecondary )
 			{
 				Diff = angle_difference( pDir, direction );
 				direction += Diff * anglePlayerDelay;
