@@ -58,6 +58,7 @@
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},},
     {"id":{"name":"sin_oscillate","path":"scripts/sin_oscillate/sin_oscillate.yy",},},
     {"id":{"name":"sEnemyBigBatD","path":"sprites/sEnemyBigBatD/sEnemyBigBatD.yy",},},
+    {"id":{"name":"sShadow","path":"sprites/sShadow/sShadow.yy",},},
     {"id":{"name":"sndPlayerHit","path":"sounds/sndPlayerHit/sndPlayerHit.yy",},},
     {"id":{"name":"oWeapon","path":"objects/oWeapon/oWeapon.yy",},},
     {"id":{"name":"oSpawnerPlayer","path":"objects/oSpawnerPlayer/oSpawnerPlayer.yy",},},

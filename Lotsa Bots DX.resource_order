@@ -38,6 +38,7 @@
     {"name":"oCamera","order":13,"path":"objects/oCamera/oCamera.yy",},
     {"name":"sBrick","order":6,"path":"sprites/sBrick/sBrick.yy",},
     {"name":"sin_oscillate","order":1,"path":"scripts/sin_oscillate/sin_oscillate.yy",},
+    {"name":"sShadow","order":18,"path":"sprites/sShadow/sShadow.yy",},
     {"name":"sndPlayerHit","order":5,"path":"sounds/sndPlayerHit/sndPlayerHit.yy",},
     {"name":"oWeapon","order":2,"path":"objects/oWeapon/oWeapon.yy",},
     {"name":"oSpawnerPlayer","order":6,"path":"objects/oSpawnerPlayer/oSpawnerPlayer.yy",},
