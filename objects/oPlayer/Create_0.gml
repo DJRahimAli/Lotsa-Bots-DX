@@ -29,6 +29,7 @@ keyUp = false;
 keyDown = false;
 
 keyPrimary = false;
+keySecondary = false;
 
 keyNoclip = false;
 

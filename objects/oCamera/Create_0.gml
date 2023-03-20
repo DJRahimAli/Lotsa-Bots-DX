@@ -9,12 +9,30 @@
 
 camLengthSmooth = 0;
 
+
 camLengthXMin = 0;
-camLengthXMax = 50;
+camLengthXMax = 0;
+
+camLengthXPrimaryMin = 0;
+camLengthXPrimaryMax = 50;
+
+camLengthXSecondaryMin = 0;
+camLengthXSecondaryMax = 100;
+
+
 camLengthXCurrent = 0;
 
+
 camLengthYMin = 0;
-camLengthYMax = 50;
+camLengthYMax = 0;
+
+camLengthYPrimaryMin = 0;
+camLengthYPrimaryMax = 50;
+
+camLengthYSecondaryMin = 0;
+camLengthYSecondaryMax = 100;
+
+
 camLengthYCurrent = 0;
 
 // Enable views

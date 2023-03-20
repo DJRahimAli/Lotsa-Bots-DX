@@ -7,7 +7,11 @@ if ( playerStateCurrent == playerstate.idle )
 	keyUp = keyboard_check(ord("W"));
 	keyDown = keyboard_check(ord("S"));
 
-	if ( !global.mobileControls ) keyPrimary = mouse_check_button(mb_left);
+	if ( !global.mobileControls )
+	{
+		keyPrimary = mouse_check_button(mb_left);
+		keySecondary = mouse_check_button(mb_right);
+	}
 
 	//keyNoclip = keyboard_check_pressed(ord("V"));
 	#endregion
@@ -205,17 +209,6 @@ if ( playerStateCurrent == playerstate.idle )
 			oWeapon.image_speed = 0;
 			
 			
-			/*if (oCamera.camLengthSmooth != 0)
-			{
-				oCamera.camLengthXCurrent = lerp(oCamera.camLengthXCurrent, oCamera.camLengthXMin, oCamera.camLengthSmooth);
-				oCamera.camLengthYCurrent = lerp(oCamera.camLengthYCurrent, oCamera.camLengthYMin, oCamera.camLengthSmooth);
-			}
-			else
-			{
-				oCamera.camLengthXCurrent = oCamera.camLengthXMin;
-				oCamera.camLengthYCurrent = oCamera.camLengthYMin;
-			}*/
-			
 			if (audio_is_playing(sndSMG)) audio_stop_sound( sndSMG );
 			
 			if ( hsp != 0 || vsp != 0 )
@@ -229,16 +222,11 @@ if ( playerStateCurrent == playerstate.idle )
 				oWeapon.image_speed = 1;
 				direction = mDir;
 				
-				/*if (oCamera.camLengthSmooth != 0)
-				{
-					oCamera.camLengthXCurrent = lerp(oCamera.camLengthXCurrent, oCamera.camLengthXMax, oCamera.camLengthSmooth);
-					oCamera.camLengthYCurrent = lerp(oCamera.camLengthYCurrent, oCamera.camLengthYMax, oCamera.camLengthSmooth);
-				}
-				else
-				{
-					oCamera.camLengthXCurrent = oCamera.camLengthXMax;
-					oCamera.camLengthYCurrent = oCamera.camLengthYMax;
-				}*/
+				oCamera.camLengthXMin =  oCamera.camLengthXPrimaryMin;
+				oCamera.camLengthXMax =  oCamera.camLengthXPrimaryMax;
+				
+				oCamera.camLengthYMin =  oCamera.camLengthYPrimaryMin;
+				oCamera.camLengthYMax =  oCamera.camLengthYPrimaryMax;
 				
 				weaponStateCurrent = weaponstate.primary;
 			}
@@ -249,15 +237,18 @@ if ( playerStateCurrent == playerstate.idle )
 			oWeapon.image_speed = 1;
 			
 			//if ( instance_exists(oAnalogueRight) ) mDir = oAnalogueRight._direction;
-			var Diff = angle_difference( mDir, direction );
-		
-			direction += Diff * angleAimDelay;
-			
-			/*if (oCamera.camLengthSmooth != 0)
+			if ( !keySecondary )
 			{
-				oCamera.camLengthXCurrent = lerp(oCamera.camLengthXCurrent, oCamera.camLengthXMax, oCamera.camLengthSmooth);
-				oCamera.camLengthYCurrent = lerp(oCamera.camLengthYCurrent, oCamera.camLengthYMax, oCamera.camLengthSmooth);
-			}*/
+				var Diff = angle_difference( mDir, direction );
+				
+				direction += Diff * angleAimDelay;
+			}
+			
+			oCamera.camLengthXMin =  oCamera.camLengthXPrimaryMin;
+			oCamera.camLengthXMax =  oCamera.camLengthXPrimaryMax;
+			
+			oCamera.camLengthYMin =  oCamera.camLengthYPrimaryMin;
+			oCamera.camLengthYMax =  oCamera.camLengthYPrimaryMax;
 			
 			cooldown = max( 0, cooldown-1 );
 			
@@ -319,8 +310,50 @@ if ( playerStateCurrent == playerstate.idle )
 			else if ( cooldown == 0 ) weaponStateCurrent = weaponstate.idle;
 		} break;
 	}
+	
+	
 	#endregion
-
+	
+	if ( keySecondary )
+	{
+		oCamera.camLengthXMin =  oCamera.camLengthXSecondaryMin;
+		oCamera.camLengthXMax =  oCamera.camLengthXSecondaryMax;
+		
+		oCamera.camLengthYMin =  oCamera.camLengthYSecondaryMin;
+		oCamera.camLengthYMax =  oCamera.camLengthYSecondaryMax;
+		
+		var Diff = angle_difference( mDir, direction );
+		
+		direction += Diff * angleAimDelay;
+	}
+	
+	if ( keyPrimary || keySecondary )
+	{
+		if (oCamera.camLengthSmooth != 0)
+		{
+			oCamera.camLengthXCurrent = lerp(oCamera.camLengthXCurrent, oCamera.camLengthXMax, oCamera.camLengthSmooth);
+			oCamera.camLengthYCurrent = lerp(oCamera.camLengthYCurrent, oCamera.camLengthYMax, oCamera.camLengthSmooth);
+		}
+		else
+		{
+			oCamera.camLengthXCurrent = oCamera.camLengthXMax;
+			oCamera.camLengthYCurrent = oCamera.camLengthYMax;
+		}
+	}
+	else
+	{
+		if (oCamera.camLengthSmooth != 0)
+		{
+			oCamera.camLengthXCurrent = lerp(oCamera.camLengthXCurrent, oCamera.camLengthXMin, oCamera.camLengthSmooth);
+			oCamera.camLengthYCurrent = lerp(oCamera.camLengthYCurrent, oCamera.camLengthYMin, oCamera.camLengthSmooth);
+		}
+		else
+		{
+			oCamera.camLengthXCurrent = oCamera.camLengthXMin;
+			oCamera.camLengthYCurrent = oCamera.camLengthYMin;
+		}
+	}
+	
 	angle = ( round(direction / angleInterval) ) mod directions;
 
 	if ( spriteData[characterCurrent][playerStateCurrent][angle][playersprite.index] != -2 ) anglePrevious = angle; else angle = anglePrevious;
