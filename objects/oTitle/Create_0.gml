@@ -6,7 +6,7 @@ surface = surface_create(room_width, room_height);
 
 //audio_play_sound(musTitle, 1, 2);
 
-cooldown = 60*3;
+cooldown = 60*5;
 cooldownCurrent = cooldown;
 
 oLogo.image_alpha = 0;
