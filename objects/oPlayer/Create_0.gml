@@ -77,7 +77,7 @@ playerStateCurrent = playerstate.idle;
 #region Weapon
 cooldown = 0;
 WeaponData();
-weaponCurrent = weapons.unarmed;
+weaponCurrent = weapons.shotgun;
 #endregion
 
 
