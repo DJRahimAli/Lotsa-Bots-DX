@@ -10,14 +10,14 @@
   "bitRate": 320,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 0.927891,
+  "duration": 1.02,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "preload": false,
   "sampleRate": 44100,
-  "soundFile": "sndshotgun.wav",
+  "soundFile": "sndShotgun.wav",
   "type": 1,
-  "volume": 0.6,
+  "volume": 1.0,
 }
