@@ -209,6 +209,12 @@ if ( playerStateCurrent == playerstate.idle )
 			oWeapon.image_speed = 0;
 			
 			
+			oCamera.camLengthXMin =  0;
+			oCamera.camLengthXMax =  0;
+			
+			oCamera.camLengthYMin =  0;
+			oCamera.camLengthYMax =  0;
+			
 			if (audio_is_playing(sndSMG)) audio_stop_sound( sndSMG );
 			
 			if ( hsp != 0 || vsp != 0 ) && ( !keySecondary )
@@ -221,12 +227,6 @@ if ( playerStateCurrent == playerstate.idle )
 			{
 				oWeapon.image_speed = 1;
 				direction = mDir;
-				
-				oCamera.camLengthXMin =  oCamera.camLengthXPrimaryMin;
-				oCamera.camLengthXMax =  oCamera.camLengthXPrimaryMax;
-				
-				oCamera.camLengthYMin =  oCamera.camLengthYPrimaryMin;
-				oCamera.camLengthYMax =  oCamera.camLengthYPrimaryMax;
 				
 				weaponStateCurrent = weaponstate.primary;
 			}
@@ -244,12 +244,6 @@ if ( playerStateCurrent == playerstate.idle )
 				direction += Diff * angleAimDelay;
 			}
 			
-			oCamera.camLengthXMin =  oCamera.camLengthXPrimaryMin;
-			oCamera.camLengthXMax =  oCamera.camLengthXPrimaryMax;
-			
-			oCamera.camLengthYMin =  oCamera.camLengthYPrimaryMin;
-			oCamera.camLengthYMax =  oCamera.camLengthYPrimaryMax;
-			
 			cooldown = max( 0, cooldown-1 );
 			
 			if ( cooldown != 0 )
@@ -261,6 +255,12 @@ if ( playerStateCurrent == playerstate.idle )
 			{
 				if ( cooldown == 0 )
 				{
+					oCamera.camLengthXMin =  oCamera.camLengthXPrimaryMin;
+					oCamera.camLengthXMax =  oCamera.camLengthXPrimaryMax;
+					
+					oCamera.camLengthYMin =  oCamera.camLengthYPrimaryMin;
+					oCamera.camLengthYMax =  oCamera.camLengthYPrimaryMax;
+					
 					switch (weaponCurrent)
 					{
 						case weapons.unarmed:
@@ -307,7 +307,16 @@ if ( playerStateCurrent == playerstate.idle )
 					}
 				}
 			}
-			else if ( cooldown == 0 ) weaponStateCurrent = weaponstate.idle;
+			else
+			{
+				oCamera.camLengthXMin =  0;
+				oCamera.camLengthXMax =  0;
+				
+				oCamera.camLengthYMin =  0;
+				oCamera.camLengthYMax =  0;
+				
+				if ( cooldown == 0 ) weaponStateCurrent = weaponstate.idle;
+			}
 		} break;
 	}
 	
@@ -324,7 +333,7 @@ if ( playerStateCurrent == playerstate.idle )
 		
 		var Diff = angle_difference( mDir, direction );
 		
-		direction += Diff * angleAimDelay;
+		direction += Diff * angleAimDelay/2;
 	}
 	
 	if ( keyPrimary || keySecondary )
