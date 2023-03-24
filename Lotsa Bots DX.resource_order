@@ -72,6 +72,7 @@
     {"name":"sndPlayerSpawn","order":3,"path":"sounds/sndPlayerSpawn/sndPlayerSpawn.yy",},
     {"name":"oBrick","order":1,"path":"objects/oBrick/oBrick.yy",},
     {"name":"Data","order":2,"path":"scripts/Data/Data.yy",},
+    {"name":"sndLife","order":12,"path":"sounds/sndLife/sndLife.yy",},
     {"name":"sndEnemySpawn","order":2,"path":"sounds/sndEnemySpawn/sndEnemySpawn.yy",},
     {"name":"cos_oscillate","order":2,"path":"scripts/cos_oscillate/cos_oscillate.yy",},
     {"name":"sBrickParticle","order":15,"path":"sprites/sBrickParticle/sBrickParticle.yy",},

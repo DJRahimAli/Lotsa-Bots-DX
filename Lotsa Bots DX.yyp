@@ -96,6 +96,7 @@
     {"id":{"name":"oBrick","path":"objects/oBrick/oBrick.yy",},},
     {"id":{"name":"oCollision","path":"objects/oCollision/oCollision.yy",},},
     {"id":{"name":"Data","path":"scripts/Data/Data.yy",},},
+    {"id":{"name":"sndLife","path":"sounds/sndLife/sndLife.yy",},},
     {"id":{"name":"sndEnemySpawn","path":"sounds/sndEnemySpawn/sndEnemySpawn.yy",},},
     {"id":{"name":"fntSilver","path":"fonts/fntSilver/fntSilver.yy",},},
     {"id":{"name":"cos_oscillate","path":"scripts/cos_oscillate/cos_oscillate.yy",},},
