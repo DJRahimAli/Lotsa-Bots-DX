@@ -1,3 +1,5 @@
+draw_sprite(sShadow, 0, x, bbox_bottom);
+
 var array = spriteData[characterCurrent][playerStateCurrent][angle];
 
 sprite_index = array[playersprite.index];
@@ -31,7 +33,5 @@ if ( flashAlphaCurrent != 0 )
 	
 	shader_reset();
 }
-
-draw_sprite(sShadow, 0, x, bbox_bottom);
 
 draw_sprite( sCrosshair, 0, oPlayer.x + round(lengthdir_x(crosshairDistance, direction)), oPlayer.y + round(lengthdir_y(crosshairDistance, direction)) );

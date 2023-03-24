@@ -277,7 +277,7 @@ if ( playerStateCurrent == playerstate.idle )
 						case weapons.shotgun:
 						{
 							if (audio_is_playing(sndSMG)) audio_stop_sound( sndSMG );
-							audio_play_sound( sndShotgun, 5, false );
+							audio_play_sound( sndShotgun, 5, false, 1, 0, random_range(0.9,1) );
 						} break;
 					}
 					
