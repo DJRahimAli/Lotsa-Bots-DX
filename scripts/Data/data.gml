@@ -8,9 +8,9 @@ function WeaponData()
 
 function PlayerSpriteData()
 {
-	spriteData[character.arrow][playerstate.idle]  = [ [sArrowr, sArrowd, 1, 1, 0, c_white],  [sArrowur, sArrowd, 1, 1, 0, c_white],  [sArrowu, sArrowd, 1, 1, 0, c_white],  [sArrowul, sArrowd, 1, 1, 0, c_white],   [sArrowl, sArrowd, 1, 1, 0, c_white],   [sArrowdl, sArrowd, 1, 1, 0, c_white],   [sArrowd, sArrowd, 1, 1, 0, c_white],  [sArrowdr, sArrowd, 1, 1, 0, c_white]  ];
+	//spriteData[character.arrow][playerstate.idle]  = [ [sArrowr, sArrowd, 1, 1, 0, c_white],  [sArrowur, sArrowd, 1, 1, 0, c_white],  [sArrowu, sArrowd, 1, 1, 0, c_white],  [sArrowul, sArrowd, 1, 1, 0, c_white],   [sArrowl, sArrowd, 1, 1, 0, c_white],   [sArrowdl, sArrowd, 1, 1, 0, c_white],   [sArrowd, sArrowd, 1, 1, 0, c_white],  [sArrowdr, sArrowd, 1, 1, 0, c_white]  ];
 
-	spriteData[character.arrow][playerstate.idle]  = [ [sArrowr, sArrowd, 1, 1, 0, c_red],  [sArrowur, sArrowd, 1, 1, 0, c_red],  [sArrowu, sArrowd, 1, 1, 0, c_red],  [sArrowul, sArrowd, 1, 1, 0, c_red],   [sArrowl, sArrowd, 1, 1, 0, c_red],   [sArrowdl, sArrowd, 1, 1, 0, c_red],   [sArrowd, sArrowd, 1, 1, 0, c_red],  [sArrowdr, sArrowd, 1, 1, 0, c_red]  ];
+	//spriteData[character.arrow][playerstate.idle]  = [ [sArrowr, sArrowd, 1, 1, 0, c_red],  [sArrowur, sArrowd, 1, 1, 0, c_red],  [sArrowu, sArrowd, 1, 1, 0, c_red],  [sArrowul, sArrowd, 1, 1, 0, c_red],   [sArrowl, sArrowd, 1, 1, 0, c_red],   [sArrowdl, sArrowd, 1, 1, 0, c_red],   [sArrowd, sArrowd, 1, 1, 0, c_red],  [sArrowdr, sArrowd, 1, 1, 0, c_red]  ];
 	
 	
 	spriteData[character.player][playerstate.idle] = [ [sPlayerR, sPlayerD], [sPlayerUR, sPlayerD], [sPlayerU, sPlayerD], [sPlayerUR, sPlayerD, -1], [sPlayerR, sPlayerD, -1], [sPlayerDR, sPlayerD, -1], [sPlayerD, -2], [sPlayerDR, sPlayerD] ];

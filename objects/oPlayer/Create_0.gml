@@ -1,5 +1,5 @@
 x = oSpawnerPlayer.x;
-y = oSpawnerPlayer.y - sprite_height/2;
+y = oSpawnerPlayer.y - oSpawnerPlayer.sprite_height/2;
 
 audio_play_sound( sndPlayerSpawn, 5, false );
 
@@ -117,7 +117,7 @@ for (var i = 0; i < character.size; i++)
 }
 
 
-//PlayerSpriteData();
+PlayerSpriteData();
 
 
 defaultarray = spriteData[0][0][0];

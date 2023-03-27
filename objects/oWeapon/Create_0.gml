@@ -17,7 +17,7 @@ for (var i = 0; i < character.size; i++)
 }
 
 
-//WeaponSpriteData();
+WeaponSpriteData();
 
 
 defaultarray = spriteData[0][0][0][0];
