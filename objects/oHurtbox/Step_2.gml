@@ -15,8 +15,8 @@ else
 	}
 }
 
-x = int64(x);
-y = int64(y);
+x = round(x);
+y = round(y);
 
 
 if ( instance_exists(oPlayer) ) depth = oPlayer.depth + 2*sign(oPlayer.y+8 - y);

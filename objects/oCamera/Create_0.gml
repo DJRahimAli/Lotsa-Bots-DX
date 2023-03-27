@@ -7,31 +7,31 @@
 
 #macro CAM_SMOOTH 0.12
 
-camLengthSmooth = 0;
+targetX = 0;
+targetY = 0;
+
+targetOffsetX = 0;
+targetOffsetY = 0;
 
 
-camLengthXMin = 0;
-camLengthXMax = 0;
+camLengthSmoothMin = 0.1;
+camLengthSmoothMax = 0.4;
 
-camLengthXPrimaryMin = 0;
-camLengthXPrimaryMax = 50;
 
-camLengthXSecondaryMin = 0;
-camLengthXSecondaryMax = 100;
+camLengthX = 0;
 
+camLengthXPrimary = 50;
+
+camLengthXSecondary = 100;
 
 camLengthXCurrent = 0;
 
 
-camLengthYMin = 0;
-camLengthYMax = 0;
+camLengthY = 0;
 
-camLengthYPrimaryMin = 0;
-camLengthYPrimaryMax = 50;
+camLengthYPrimary = 50;
 
-camLengthYSecondaryMin = 0;
-camLengthYSecondaryMax = 100;
-
+camLengthYSecondary = 100;
 
 camLengthYCurrent = 0;
 

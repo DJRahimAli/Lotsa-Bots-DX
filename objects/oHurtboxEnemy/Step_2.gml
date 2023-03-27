@@ -15,8 +15,8 @@ else
 	}
 }
 
-x = int64(x);
-y = int64(y);
+x = round(x);
+y = round(y);
 
 
 if ( timer >= 0 ) timer = max( 0, timer-1 );

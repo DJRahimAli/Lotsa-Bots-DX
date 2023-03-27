@@ -199,8 +199,6 @@ if ( playerStateCurrent == playerstate.idle )
 	#region Weapon State
 	var array = weapon[weaponCurrent];
 	
-	mDir = point_direction( x, y, mouse_x, mouse_y );
-	
 	switch (weaponStateCurrent)
 	{
 		case weaponstate.idle:
@@ -209,11 +207,9 @@ if ( playerStateCurrent == playerstate.idle )
 			oWeapon.image_speed = 0;
 			
 			
-			oCamera.camLengthXMin =  0;
-			oCamera.camLengthXMax =  0;
+			oCamera.camLengthX =  0;
 			
-			oCamera.camLengthYMin =  0;
-			oCamera.camLengthYMax =  0;
+			oCamera.camLengthY =  0;
 			
 			if (audio_is_playing(sndSMG)) audio_stop_sound( sndSMG );
 			
@@ -240,8 +236,8 @@ if ( playerStateCurrent == playerstate.idle )
 			if ( !keySecondary )
 			{
 				var Diff = angle_difference( mDir, direction );
-				
-				direction += Diff * angleAimDelay;
+				if ( angleAimDelay != -1 ) Diff *= angleAimDelay;
+				direction += Diff;
 			}
 			
 			cooldown = max( 0, cooldown-1 );
@@ -253,14 +249,12 @@ if ( playerStateCurrent == playerstate.idle )
 			
 			if ( keyPrimary )
 			{
+				oCamera.camLengthX =  oCamera.camLengthXPrimary;
+				
+				oCamera.camLengthY =  oCamera.camLengthYPrimary;
+				
 				if ( cooldown == 0 )
 				{
-					oCamera.camLengthXMin =  oCamera.camLengthXPrimaryMin;
-					oCamera.camLengthXMax =  oCamera.camLengthXPrimaryMax;
-					
-					oCamera.camLengthYMin =  oCamera.camLengthYPrimaryMin;
-					oCamera.camLengthYMax =  oCamera.camLengthYPrimaryMax;
-					
 					switch (weaponCurrent)
 					{
 						case weapons.unarmed:
@@ -309,11 +303,9 @@ if ( playerStateCurrent == playerstate.idle )
 			}
 			else
 			{
-				oCamera.camLengthXMin =  0;
-				oCamera.camLengthXMax =  0;
+				oCamera.camLengthX =  0;
 				
-				oCamera.camLengthYMin =  0;
-				oCamera.camLengthYMax =  0;
+				oCamera.camLengthY =  0;
 				
 				if ( cooldown == 0 ) weaponStateCurrent = weaponstate.idle;
 			}
@@ -325,41 +317,39 @@ if ( playerStateCurrent == playerstate.idle )
 	
 	if ( keySecondary )
 	{
-		oCamera.camLengthXMin =  oCamera.camLengthXSecondaryMin;
-		oCamera.camLengthXMax =  oCamera.camLengthXSecondaryMax;
+		oCamera.camLengthX =  oCamera.camLengthXSecondary;
 		
-		oCamera.camLengthYMin =  oCamera.camLengthYSecondaryMin;
-		oCamera.camLengthYMax =  oCamera.camLengthYSecondaryMax;
+		oCamera.camLengthY =  oCamera.camLengthYSecondary;
 		
 		var Diff = angle_difference( mDir, direction );
-		
-		direction += Diff * angleAimDelay/2;
+		if ( angleAimDelay != -1 ) Diff *= angleAimDelay;
+		direction += Diff/2;
 	}
 	
 	if ( keyPrimary || keySecondary )
 	{
-		if (oCamera.camLengthSmooth != 0)
+		if (oCamera.camLengthSmoothMax != 0)
 		{
-			oCamera.camLengthXCurrent = lerp(oCamera.camLengthXCurrent, oCamera.camLengthXMax, oCamera.camLengthSmooth);
-			oCamera.camLengthYCurrent = lerp(oCamera.camLengthYCurrent, oCamera.camLengthYMax, oCamera.camLengthSmooth);
+			oCamera.camLengthXCurrent = lerp(oCamera.camLengthXCurrent, oCamera.camLengthX, oCamera.camLengthSmoothMax);
+			oCamera.camLengthYCurrent = lerp(oCamera.camLengthYCurrent, oCamera.camLengthY, oCamera.camLengthSmoothMax);
 		}
 		else
 		{
-			oCamera.camLengthXCurrent = oCamera.camLengthXMax;
-			oCamera.camLengthYCurrent = oCamera.camLengthYMax;
+			oCamera.camLengthXCurrent = oCamera.camLengthX;
+			oCamera.camLengthYCurrent = oCamera.camLengthY;
 		}
 	}
 	else
 	{
-		if (oCamera.camLengthSmooth != 0)
+		if (oCamera.camLengthSmoothMin != 0)
 		{
-			oCamera.camLengthXCurrent = lerp(oCamera.camLengthXCurrent, oCamera.camLengthXMin, oCamera.camLengthSmooth);
-			oCamera.camLengthYCurrent = lerp(oCamera.camLengthYCurrent, oCamera.camLengthYMin, oCamera.camLengthSmooth);
+			oCamera.camLengthXCurrent = lerp(oCamera.camLengthXCurrent, 0, oCamera.camLengthSmoothMin);
+			oCamera.camLengthYCurrent = lerp(oCamera.camLengthYCurrent, 0, oCamera.camLengthSmoothMin);
 		}
 		else
 		{
-			oCamera.camLengthXCurrent = oCamera.camLengthXMin;
-			oCamera.camLengthYCurrent = oCamera.camLengthYMin;
+			oCamera.camLengthXCurrent = 0;
+			oCamera.camLengthYCurrent = 0;
 		}
 	}
 	

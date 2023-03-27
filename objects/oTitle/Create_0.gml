@@ -16,10 +16,10 @@ oTitle.image_alpha = 0;
 
 optionString =
 {
-	def		: [ int64(room_width/2), room_height-20, "Select an option by clicking on it."			   ],
-	play	: [ int64(room_width/2), room_height-20, "Play the game."								   ],
-	options : [ int64(room_width/2), room_height-20, "Configure game settings."						   ],
-	credits : [ int64(room_width/2), room_height-20, "Check out the awesome folks who made this game!" ]
+	def		: [ round(room_width/2), room_height-20, "Select an option by clicking on it."			   ],
+	play	: [ round(room_width/2), room_height-20, "Play the game."								   ],
+	options : [ round(room_width/2), room_height-20, "Configure game settings."						   ],
+	credits : [ round(room_width/2), room_height-20, "Check out the awesome folks who made this game!" ]
 };
 
 optionText = optionString.def;
