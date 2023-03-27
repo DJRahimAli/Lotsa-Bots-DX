@@ -328,7 +328,7 @@ if ( playerStateCurrent == playerstate.idle )
 	
 	if ( keyPrimary || keySecondary )
 	{
-		if (oCamera.camLengthSmoothMax != 0)
+		if (oCamera.camLengthSmoothMax != -1)
 		{
 			oCamera.camLengthXCurrent = lerp(oCamera.camLengthXCurrent, oCamera.camLengthX, oCamera.camLengthSmoothMax);
 			oCamera.camLengthYCurrent = lerp(oCamera.camLengthYCurrent, oCamera.camLengthY, oCamera.camLengthSmoothMax);
@@ -341,7 +341,7 @@ if ( playerStateCurrent == playerstate.idle )
 	}
 	else
 	{
-		if (oCamera.camLengthSmoothMin != 0)
+		if (oCamera.camLengthSmoothMin != -1)
 		{
 			oCamera.camLengthXCurrent = lerp(oCamera.camLengthXCurrent, 0, oCamera.camLengthSmoothMin);
 			oCamera.camLengthYCurrent = lerp(oCamera.camLengthYCurrent, 0, oCamera.camLengthSmoothMin);
