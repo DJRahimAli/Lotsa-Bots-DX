@@ -21,8 +21,8 @@ if ( room != rTitle )
 		// Set target camera position
 		if ( instance_exists( target ) )
 		{
-			targetX = lerp(targetX, target.x - round(camW / 2), CAM_SMOOTH);
-			targetY = lerp(targetY, target.y - round(camH / 2), CAM_SMOOTH);
+			targetX += (target.x - round(camW / 2) - targetX) * CAM_SMOOTH;
+			targetY += (target.y - round(camH / 2) - targetY) * CAM_SMOOTH;
 		}
 	}
 	

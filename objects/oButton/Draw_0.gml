@@ -11,11 +11,11 @@ if ( hover )
 	
 	//Draw line
 	draw_set_color(make_color_rgb(245,73,149));
-	draw_rectangle( 0, bbox_top + 1 + yOffsetCurrent + 16, room_width, bbox_top + yOffsetCurrent + 48, false );
+	draw_rectangle( 0, bbox_top + 1 + int64(yOffsetCurrent) + 16, room_width, bbox_top + int64(yOffsetCurrent) + 48, false );
 	draw_set_color(c_white);
 	
 	//Draw button line
-	for ( var i = 0; i < room_width + lineWidth*2; i += lineWidth ) draw_sprite( sButtonLine, button, lineX + i, bbox_top + 1 + yOffsetCurrent + 16);
+	for ( var i = 0; i < room_width + lineWidth*2; i += lineWidth ) draw_sprite( sButtonLine, button, lineX + i, bbox_top + 1 + int64(yOffsetCurrent) + 16);
 	
 	//Reset target
 	surface_reset_target();
@@ -27,4 +27,4 @@ if ( hover )
 	surface_free(surface);
 }
 
-draw_sprite_ext( sprite_index, 0, xDraw, yDraw + yOffsetCurrent, image_xscale, image_yscale, 0, c_white, image_alpha );
+draw_sprite_ext( sprite_index, 0, xDraw, yDraw + int64(yOffsetCurrent), image_xscale, image_yscale, 0, c_white, image_alpha );
