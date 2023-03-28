@@ -51,7 +51,7 @@ if ( playerStateCurrent == playerstate.idle )
 		else
 		{
 			//Deceleration
-			hspPlayer = lerp( hspPlayer, 0, hDecelCurrent );
+			hspPlayer += -hspPlayer * hDecelCurrent;
 		}
 	}
 	else
@@ -63,7 +63,7 @@ if ( playerStateCurrent == playerstate.idle )
 		else
 		{
 			//Acceleration
-			hspPlayer = lerp( hspPlayer, hspMaxCurrent * hDir, hAccelCurrent );
+			hspPlayer += ((hspMaxCurrent * hDir) - hspPlayer) * hAccelCurrent;
 		}
 	}
 
@@ -102,7 +102,7 @@ if ( playerStateCurrent == playerstate.idle )
 		else
 		{
 			//Deceleration
-			vspPlayer = lerp( vspPlayer, 0, vDecelCurrent );
+			vspPlayer += -vspPlayer * vDecelCurrent;
 		}
 	}
 	else
@@ -114,7 +114,7 @@ if ( playerStateCurrent == playerstate.idle )
 		else
 		{
 			//Acceleration
-			vspPlayer = lerp( vspPlayer, vspMaxCurrent * vDir, vAccelCurrent );
+			vspPlayer += ((vspMaxCurrent * vDir) - vspPlayer) * vAccelCurrent;
 		}
 	}
 
@@ -236,7 +236,7 @@ if ( playerStateCurrent == playerstate.idle )
 			if ( !keySecondary )
 			{
 				var Diff = angle_difference( mDir, direction );
-				if ( angleAimDelay != -1 ) Diff *= angleAimDelay;
+				if ( angleAimDelayPrimary != -1 ) Diff *= angleAimDelayPrimary;
 				direction += Diff;
 			}
 			
@@ -322,8 +322,8 @@ if ( playerStateCurrent == playerstate.idle )
 		oCamera.camLengthY =  oCamera.camLengthYSecondary;
 		
 		var Diff = angle_difference( mDir, direction );
-		if ( angleAimDelay != -1 ) Diff *= angleAimDelay;
-		direction += Diff/2;
+		if ( angleAimDelaySecondary != -1 ) Diff *= angleAimDelaySecondary;
+		direction += Diff;
 	}
 	
 	if ( keyPrimary || keySecondary )
@@ -343,8 +343,8 @@ if ( playerStateCurrent == playerstate.idle )
 	{
 		if (oCamera.camLengthSmoothMin != -1)
 		{
-			oCamera.camLengthXCurrent += (0 - oCamera.camLengthXCurrent) * oCamera.camLengthSmoothMax;
-			oCamera.camLengthYCurrent += (0 - oCamera.camLengthYCurrent) * oCamera.camLengthSmoothMax;
+			oCamera.camLengthXCurrent += -oCamera.camLengthXCurrent * oCamera.camLengthSmoothMax;
+			oCamera.camLengthYCurrent += -oCamera.camLengthYCurrent * oCamera.camLengthSmoothMax;
 		}
 		else
 		{

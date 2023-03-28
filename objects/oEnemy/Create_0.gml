@@ -83,7 +83,7 @@ for (var i = 0; i < weapons.size; i++)
 }
 
 
-//EnemySpriteData();
+EnemySpriteData();
 
 
 defaultarray = spriteData[0][0];

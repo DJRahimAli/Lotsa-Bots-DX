@@ -90,8 +90,11 @@ mDir = 0;
 directions = 8;
 
 angle = 0;
+
 anglePlayerDelay = 0.2;
-angleAimDelay = 0.2;
+angleAimDelayPrimary = 0.2;
+angleAimDelaySecondary = 0.1;
+
 anglePrevious = 0;
 angleInterval = ( 360 / directions );
 
