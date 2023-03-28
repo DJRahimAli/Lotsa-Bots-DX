@@ -68,7 +68,7 @@
     {"name":"oSpawnerPlayer","order":6,"path":"objects/oSpawnerPlayer/oSpawnerPlayer.yy",},
     {"name":"sTilePreview","order":9,"path":"sprites/sTilePreview/sTilePreview.yy",},
     {"name":"oOptions","order":2,"path":"objects/oOptions/oOptions.yy",},
-    {"name":"oLogo","order":1,"path":"objects/oLogo/oLogo.yy",},
+    {"name":"oLogo","order":5,"path":"objects/oLogo/oLogo.yy",},
     {"name":"sEnemyBigUR","order":4,"path":"sprites/sEnemyBigUR/sEnemyBigUR.yy",},
     {"name":"sWeaponPlayerShootShotgunDR","order":1,"path":"sprites/sWeaponPlayerShootShotgunDR/sWeaponPlayerShootShotgunDR.yy",},
     {"name":"sWeaponPlayerBatDR","order":1,"path":"sprites/sWeaponPlayerBatDR/sWeaponPlayerBatDR.yy",},
