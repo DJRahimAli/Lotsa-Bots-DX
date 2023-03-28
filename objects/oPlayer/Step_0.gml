@@ -132,10 +132,10 @@ if ( playerStateCurrent == playerstate.idle )
 	if ( !noclip )
 	{
 		//Horizontal Collision
-		if ( place_meeting( round( x ) + ceil_signed( hspReal ), round( y ), oCollision ) ) hspFloat = 0;
+		if ( place_meeting( round( x ) + ceil_signed( hsp ), round( y ), oCollision ) ) hspFloat = 0;
 		
 		//Vertical Collision
-		if ( place_meeting( round( x ), round( y ) + ceil_signed( vspReal ), oCollision ) ) vspFloat = 0;
+		if ( place_meeting( round( x ), round( y ) + ceil_signed( vsp ), oCollision ) ) vspFloat = 0;
 	}
 	
 	//Player Direction
