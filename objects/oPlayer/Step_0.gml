@@ -213,7 +213,7 @@ if ( playerStateCurrent == playerstate.idle )
 			
 			if (audio_is_playing(sndSMG)) audio_stop_sound( sndSMG );
 			
-			if ( hsp != 0 || vsp != 0 ) && ( !keySecondary )
+			if ( hsp != 0 || vsp != 0 ) && ( !keySecondary ) && ( floor(oCamera.camLengthXCurrent) == 0 && floor(oCamera.camLengthYCurrent) == 0 )
 			{
 				Diff = angle_difference( pDir, direction );
 				direction += Diff * anglePlayerDelay;
@@ -330,8 +330,8 @@ if ( playerStateCurrent == playerstate.idle )
 	{
 		if (oCamera.camLengthSmoothMax != -1)
 		{
-			oCamera.camLengthXCurrent = lerp(oCamera.camLengthXCurrent, oCamera.camLengthX, oCamera.camLengthSmoothMax);
-			oCamera.camLengthYCurrent = lerp(oCamera.camLengthYCurrent, oCamera.camLengthY, oCamera.camLengthSmoothMax);
+			oCamera.camLengthXCurrent += (oCamera.camLengthX - oCamera.camLengthXCurrent) * oCamera.camLengthSmoothMax;
+			oCamera.camLengthYCurrent += (oCamera.camLengthY - oCamera.camLengthYCurrent) * oCamera.camLengthSmoothMax;
 		}
 		else
 		{
@@ -343,8 +343,8 @@ if ( playerStateCurrent == playerstate.idle )
 	{
 		if (oCamera.camLengthSmoothMin != -1)
 		{
-			oCamera.camLengthXCurrent = lerp(oCamera.camLengthXCurrent, 0, oCamera.camLengthSmoothMin);
-			oCamera.camLengthYCurrent = lerp(oCamera.camLengthYCurrent, 0, oCamera.camLengthSmoothMin);
+			oCamera.camLengthXCurrent += (0 - oCamera.camLengthXCurrent) * oCamera.camLengthSmoothMax;
+			oCamera.camLengthYCurrent += (0 - oCamera.camLengthYCurrent) * oCamera.camLengthSmoothMax;
 		}
 		else
 		{

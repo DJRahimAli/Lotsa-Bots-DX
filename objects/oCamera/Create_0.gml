@@ -15,7 +15,7 @@ targetOffsetY = 0;
 
 
 camLengthSmoothMin = 0.1;
-camLengthSmoothMax = 0.4;
+camLengthSmoothMax = 0.2;
 
 
 camLengthX = 0;
