@@ -7,10 +7,10 @@ if ( room != rTitle )
 	var camH = camera_get_view_height(camera);
 	
 	// Set camera position
-	if ( CAM_SMOOTH = -1 )
+	if ( camSmoothCurrent = -1 )
 	{
 		// Set target camera position
-		if ( instance_exists( target ) )
+		if (instance_exists(target))
 		{
 			targetX = target.x - round(camW / 2);
 			targetY = target.y - round(camH / 2);
@@ -19,15 +19,18 @@ if ( room != rTitle )
 	else
 	{
 		// Set target camera position
-		if ( instance_exists( target ) )
+		if (instance_exists(target))
 		{
-			targetX += (target.x - round(camW / 2) - targetX) * CAM_SMOOTH;
-			targetY += (target.y - round(camH / 2) - targetY) * CAM_SMOOTH;
+			targetX += (target.x - round(camW / 2) - targetX) * camSmoothCurrent;
+			targetY += (target.y - round(camH / 2) - targetY) * camSmoothCurrent;
 		}
 	}
 	
-	targetOffsetX = lengthdir_x(camLengthXCurrent,target.direction);
-	targetOffsetY = lengthdir_y(camLengthYCurrent,target.direction);
+	if (instance_exists(target))
+	{
+		targetOffsetX = lengthdir_x(camLengthXCurrent,target.direction);
+		targetOffsetY = lengthdir_y(camLengthYCurrent,target.direction);
+	}
 	
 	x = round(targetX + targetOffsetX);
 	y = round(targetY + targetOffsetY);
@@ -39,5 +42,5 @@ if ( room != rTitle )
 	
 	// Apply camera position
 	camera_set_view_pos(camera, x, y);
-	camera_set_view_size(camera, camW, camH);
+	//camera_set_view_size(camera, camW, camH);
 }
