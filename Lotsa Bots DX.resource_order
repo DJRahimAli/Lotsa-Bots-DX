@@ -132,6 +132,7 @@
     {"name":"sWeaponPlayerShotgunU","order":3,"path":"sprites/sWeaponPlayerShotgunU/sWeaponPlayerShotgunU.yy",},
     {"name":"sMissing","order":11,"path":"sprites/sMissing/sMissing.yy",},
     {"name":"sEnemyBigSMGDR","order":1,"path":"sprites/sEnemyBigSMGDR/sEnemyBigSMGDR.yy",},
+    {"name":"sCrosshair","order":1,"path":"sprites/sCrosshair/sCrosshair.yy",},
     {"name":"sPlayerDeadTransitionU","order":2,"path":"sprites/sPlayerDeadTransitionU/sPlayerDeadTransitionU.yy",},
     {"name":"sButtonLine","order":5,"path":"sprites/sButtonLine/sButtonLine.yy",},
     {"name":"sBullet","order":14,"path":"sprites/sBullet/sBullet.yy",},
