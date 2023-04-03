@@ -28,7 +28,7 @@ surface_reset_target();
 draw_surface_ext(surface, 0, 0, 1, 1, 0, c_white, image_alpha);
 
 //Reset surface
-surface_free(surface);
+if (surface_exists(surface)) surface_free(surface);
 
 //Draw portrait
 draw_sprite(sArrayPortrait, portrait, 0, 0);

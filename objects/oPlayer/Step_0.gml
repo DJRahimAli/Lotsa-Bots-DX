@@ -222,7 +222,7 @@ if ( playerStateCurrent == playerstate.idle )
 			if ( keyPrimary )
 			{
 				oWeapon.image_speed = 1;
-				direction = mDir;
+				if ( !keySecondary ) direction = mDir;
 				
 				weaponStateCurrent = weaponstate.primary;
 			}
