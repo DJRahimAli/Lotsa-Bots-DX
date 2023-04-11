@@ -38,12 +38,16 @@ target = oPlayer;
 
 if (instance_exists(target))
 {
-	targetX = target.x - round(camResW / 2);
-	targetY = target.y - round(camResH / 2);
+	targetX = (target.x - round(camResW / 2));
+	targetY = (target.y - round(camResH / 2)) - 100;
 }
 
 x = round(targetX);
 y = round(targetY);
+
+// Clamp the camera position to room bounds
+x = clamp(x, 0, room_width - camResW);
+y = clamp(y, 0, room_height - camResH);
 
 // Create camera
 camera = camera_create_view(x, y, camResW, camResH);

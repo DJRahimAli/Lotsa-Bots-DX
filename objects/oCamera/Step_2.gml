@@ -12,8 +12,8 @@ if ( room != rTitle )
 		// Set target camera position
 		if (instance_exists(target))
 		{
-			targetX = target.x - round(camW / 2);
-			targetY = target.y - round(camH / 2);
+			targetX = (target.x - round(camW / 2));
+			targetY = (target.y - round(camH / 2));
 		}
 	}
 	else
