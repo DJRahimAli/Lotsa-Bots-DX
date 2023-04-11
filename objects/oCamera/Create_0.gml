@@ -36,6 +36,15 @@ view_visible[0] = true;
 // Set target object
 target = oPlayer;
 
+if (instance_exists(target))
+{
+	targetX = target.x - round(camResW / 2);
+	targetY = target.y - round(camResH / 2);
+}
+
+x = round(targetX);
+y = round(targetY);
+
 // Create camera
 camera = camera_create_view(x, y, camResW, camResH);
 
