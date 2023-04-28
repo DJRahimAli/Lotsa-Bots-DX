@@ -17,7 +17,7 @@
   },
   "preload": false,
   "sampleRate": 44100,
-  "soundFile": "sndpickup.wav",
+  "soundFile": "sndPickup.wav",
   "type": 1,
   "volume": 1.0,
 }

@@ -17,7 +17,7 @@
   },
   "preload": false,
   "sampleRate": 44100,
-  "soundFile": "sndplayerhit.wav",
+  "soundFile": "sndPlayerHit.wav",
   "type": 1,
   "volume": 0.6,
 }

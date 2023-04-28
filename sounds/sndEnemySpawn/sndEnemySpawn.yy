@@ -17,7 +17,7 @@
   },
   "preload": false,
   "sampleRate": 44100,
-  "soundFile": "sndenemyspawn.wav",
+  "soundFile": "sndEnemySpawn.wav",
   "type": 1,
   "volume": 0.6,
 }
