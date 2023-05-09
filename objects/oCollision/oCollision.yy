@@ -30,5 +30,5 @@
     "path": "sprites/sCol/sCol.yy",
   },
   "spriteMaskId": null,
-  "visible": false,
+  "visible": true,
 }

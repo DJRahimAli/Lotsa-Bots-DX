@@ -54,7 +54,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.2.1.75",
+    "IDEVersion": "2023.4.0.84",
   },
   "resources": [
     {"id":{"name":"sWeaponPlayerBatSwingUR","path":"sprites/sWeaponPlayerBatSwingUR/sWeaponPlayerBatSwingUR.yy",},},
@@ -175,6 +175,7 @@
     {"id":{"name":"sCursor","path":"sprites/sCursor/sCursor.yy",},},
     {"id":{"name":"sBullet","path":"sprites/sBullet/sBullet.yy",},},
     {"id":{"name":"sPlayerR","path":"sprites/sPlayerR/sPlayerR.yy",},},
+    {"id":{"name":"sWallTile","path":"sprites/sWallTile/sWallTile.yy",},},
     {"id":{"name":"sEnemyBigDR","path":"sprites/sEnemyBigDR/sEnemyBigDR.yy",},},
     {"id":{"name":"sEnemyBigSwingBatUR","path":"sprites/sEnemyBigSwingBatUR/sEnemyBigSwingBatUR.yy",},},
     {"id":{"name":"sEnemyBigShotgunDR","path":"sprites/sEnemyBigShotgunDR/sEnemyBigShotgunDR.yy",},},
@@ -189,6 +190,7 @@
     {"id":{"name":"sEnemyBigShotgunUR","path":"sprites/sEnemyBigShotgunUR/sEnemyBigShotgunUR.yy",},},
     {"id":{"name":"sCol","path":"sprites/sCol/sCol.yy",},},
     {"id":{"name":"sWeaponPlayerShotgunUR","path":"sprites/sWeaponPlayerShotgunUR/sWeaponPlayerShotgunUR.yy",},},
+    {"id":{"name":"oWallTile","path":"objects/oWallTile/oWallTile.yy",},},
     {"id":{"name":"sndPickup","path":"sounds/sndPickup/sndPickup.yy",},},
     {"id":{"name":"sWeaponPlayerShootShotgunUR","path":"sprites/sWeaponPlayerShootShotgunUR/sWeaponPlayerShootShotgunUR.yy",},},
     {"id":{"name":"oButton","path":"objects/oButton/oButton.yy",},},
