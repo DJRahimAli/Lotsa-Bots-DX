@@ -1,11 +1,11 @@
 if ( playerStateCurrent == playerstate.idle )
 {
 	#region Controls
-	keyLeft = keyboard_check(ord("A"));
-	keyRight = keyboard_check(ord("D"));
+	keyLeft = input_value("left");
+	keyRight = input_value("right");
 
-	keyUp = keyboard_check(ord("W"));
-	keyDown = keyboard_check(ord("S"));
+	keyUp = input_value("up");
+	keyDown = input_value("down");
 
 	if ( !global.mobileControls )
 	{
@@ -19,16 +19,7 @@ if ( playerStateCurrent == playerstate.idle )
 	#region Movement Code
 
 	//Horizontal Movement
-	if ( !global.mobileControls )
-	{
-		var leftInput = abs( keyLeft );
-		var rightInput = abs( keyRight );
-	
-		if ( leftInput <= deadzone ) leftInput = 0;
-		if ( rightInput <= deadzone ) rightInput = 0;
-	
-		hDir = ( (rightInput*sign(keyRight)) - (leftInput*sign(keyLeft)) );
-	}
+	if (!global.mobileControls) hDir = (keyRight - keyLeft);
 	/*else
 	{
 		if ( instance_exists(oAnalogueLeft) )
@@ -70,16 +61,7 @@ if ( playerStateCurrent == playerstate.idle )
 	hsp = ( hspPlayer );
 
 	//Vertical Movement
-	if ( !global.mobileControls )
-	{
-		var upInput = abs( keyUp );
-		var downInput = abs( keyDown );
-	
-		if ( upInput <= deadzone ) upInput = 0;
-		if ( downInput <= deadzone ) downInput = 0;
-	
-		vDir = ( (downInput*sign(keyDown)) - (upInput*sign(keyUp)) );
-	}
+	if (!global.mobileControls) vDir = (keyDown - keyUp);
 	/*else
 	{
 		if ( instance_exists(oAnalogueLeft) )
