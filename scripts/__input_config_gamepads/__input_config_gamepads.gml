@@ -1,5 +1,5 @@
 //Default minimum threshold for directional (thumbstick) axes. This value is used for detecting gamepad input when hotswapping so make sure you set it above 0.0
-#macro INPUT_DEFAULT_AXIS_MIN_THRESHOLD  0.2
+#macro INPUT_DEFAULT_AXIS_MIN_THRESHOLD  0.1
 
 //Default maximum threshold for directional (thumbstick) axes
 #macro INPUT_DEFAULT_AXIS_MAX_THRESHOLD  0.95

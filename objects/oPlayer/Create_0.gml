@@ -60,6 +60,10 @@ vAccelCurrent = 0.2;
 
 vDecelCurrent = 0.2;
 
+
+hMoving = false;
+vMoving = false;
+
 noclip = false;
 #endregion
 

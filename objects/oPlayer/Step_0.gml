@@ -51,6 +51,7 @@ if ( playerStateCurrent == playerstate.idle )
 			//Deceleration
 			hspPlayer += -hspPlayer * hDecelCurrent;
 		}
+		hMoving = false
 	}
 	else
 	{
@@ -63,6 +64,7 @@ if ( playerStateCurrent == playerstate.idle )
 			//Acceleration
 			hspPlayer += ((hspMaxCurrent * hDir) - hspPlayer) * hAccelCurrent;
 		}
+		hMoving = true;
 	}
 
 	hsp = ( hspPlayer );
@@ -81,6 +83,7 @@ if ( playerStateCurrent == playerstate.idle )
 			//Deceleration
 			vspPlayer += -vspPlayer * vDecelCurrent;
 		}
+		vMoving = false;
 	}
 	else
 	{
@@ -93,6 +96,7 @@ if ( playerStateCurrent == playerstate.idle )
 			//Acceleration
 			vspPlayer += ((vspMaxCurrent * vDir) - vspPlayer) * vAccelCurrent;
 		}
+		vMoving = true;
 	}
 
 	vsp = ( vspPlayer );
@@ -144,6 +148,7 @@ if ( playerStateCurrent == playerstate.idle )
 			hspPlayer = 0;
 			hspReal = 0;
 			hspFraction = 0;
+			hMoving = false;
 		}
 		x += hsp;
 	
@@ -155,6 +160,7 @@ if ( playerStateCurrent == playerstate.idle )
 			vspPlayer = 0;
 			vspReal = 0;
 			vspFraction = 0;
+			vMoving = false;
 		}
 		y += vsp;
 	}
@@ -164,7 +170,7 @@ if ( playerStateCurrent == playerstate.idle )
 		y += vsp;
 	}
 	
-	if (hDir == 0 && vDir == 0) && (x == xprevious && y == yprevious)
+	if (hMoving == false && vMoving == false)
 	{
 		image_speed = 0;
 		image_index = 0;
