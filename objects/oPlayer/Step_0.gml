@@ -68,7 +68,7 @@ if ( playerStateCurrent == playerstate.idle )
 	hsp = ( hspPlayer );
 
 	//Vertical Movement
-	vDir = input_y("left", "right", "up", "down")
+	vDir = input_y("left", "right", "up", "down");
 
 	if ( vDir == 0 )
 	{
@@ -164,13 +164,12 @@ if ( playerStateCurrent == playerstate.idle )
 		y += vsp;
 	}
 	
-	
-	image_speed = clamp(abs(hspReal) + abs(vspReal), 0, 1);
-	if ( abs(hsp) + abs(vsp) == 0 )
+	if (hDir == 0 && vDir == 0) && (x == xprevious && y == yprevious)
 	{
 		image_speed = 0;
 		image_index = 0;
 	}
+	else image_speed = 1;
 	#endregion
 
 	#region Weapon State
