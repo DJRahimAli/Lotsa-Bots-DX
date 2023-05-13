@@ -9,7 +9,7 @@ if ( playerStateCurrent == playerstate.idle )
 
 	if ( !global.mobileControls )
 	{
-		keyPrimary = mouse_check_button(mb_left);
+		keyPrimary = input_value("shoot");
 		keySecondary = mouse_check_button(mb_right);
 	}
 
