@@ -195,7 +195,7 @@ if ( playerStateCurrent == playerstate.idle )
 			
 			if (audio_is_playing(sndSMG)) audio_stop_sound( sndSMG );
 			
-			if ( hsp != 0 || vsp != 0 ) && ( !keySecondary ) && ( floor(oCamera.camLengthXCurrent) == 0 && floor(oCamera.camLengthYCurrent) == 0 )
+			if ( hspReal != 0 || vspReal != 0 ) && ( !keySecondary ) && ( floor(oCamera.camLengthXCurrent) == 0 && floor(oCamera.camLengthYCurrent) == 0 )
 			{
 				Diff = angle_difference( pDir, direction );
 				direction += Diff * anglePlayerDelay;
