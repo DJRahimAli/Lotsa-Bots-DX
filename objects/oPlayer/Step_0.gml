@@ -28,8 +28,8 @@ if ( playerStateCurrent == playerstate.idle )
 	#region Controls
 	if ( !global.mobileControls )
 	{
-		keyPrimary = input_value("shoot");
-		keySecondary = mouse_check_button(mb_right);
+		keyPrimary = input_value("primary");
+		keySecondary = input_value("secondary");
 	}
 
 	//keyNoclip = keyboard_check_pressed(ord("V"));
