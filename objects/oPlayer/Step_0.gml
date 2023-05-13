@@ -1,12 +1,31 @@
+//Set some rules for the aiming cursor
+if (input_source_using(INPUT_GAMEPAD))
+{
+    //If we're using a gamepad, limit the cursor to 130px away from the player
+    input_cursor_limit_circle(x, y, 130);
+    
+    //We also set an "elastic" rule so that the cursor automatically springs back towards the player
+    //Since we've moved the elastic centre we also want to move the cursor itself by the same amount to keep the cursor in sync
+    input_cursor_elastic_set(x, y, 0.2, undefined, true);
+}
+else
+{
+    //If we're not using the gamepad then remove both the limit and the elastic
+    //This allows the cursor to move totally freely as you'd expect with mouse aiming
+    input_cursor_elastic_remove();
+    input_cursor_limit_remove();
+}
+
+//Move the point of aim if the cursor is far enough away from the player
+//We perform this distance check so that we don't get twitching when using a gamepad
+if (point_distance(x, y, input_cursor_x(), input_cursor_y()) > 10)
+{
+    aim_direction = point_direction(x, y, input_cursor_x(), input_cursor_y());
+}
+
 if ( playerStateCurrent == playerstate.idle )
 {
 	#region Controls
-	keyLeft = input_value("left");
-	keyRight = input_value("right");
-
-	keyUp = input_value("up");
-	keyDown = input_value("down");
-
 	if ( !global.mobileControls )
 	{
 		keyPrimary = input_value("shoot");
@@ -19,19 +38,7 @@ if ( playerStateCurrent == playerstate.idle )
 	#region Movement Code
 
 	//Horizontal Movement
-	if (!global.mobileControls) hDir = (keyRight - keyLeft);
-	/*else
-	{
-		if ( instance_exists(oAnalogueLeft) )
-		{
-			var Input = abs( oAnalogueLeft.hDir );
-			
-			if ( Input <= deadzone ) Input = 0;
-			
-			hDir = ( Input*sign(oAnalogueLeft.hDir) );
-		}
-	}*/
-
+	hDir = input_x("left", "right", "up", "down");
 
 	if ( hDir == 0 )
 	{
@@ -61,19 +68,7 @@ if ( playerStateCurrent == playerstate.idle )
 	hsp = ( hspPlayer );
 
 	//Vertical Movement
-	if (!global.mobileControls) vDir = (keyDown - keyUp);
-	/*else
-	{
-		if ( instance_exists(oAnalogueLeft) )
-		{
-			var Input = abs( oAnalogueLeft.vDir );
-			
-			if ( Input <= deadzone ) Input = 0;
-			
-			vDir = ( Input*sign(oAnalogueLeft.vDir) );
-		}
-	}*/
-
+	vDir = input_y("left", "right", "up", "down")
 
 	if ( vDir == 0 )
 	{
@@ -204,7 +199,7 @@ if ( playerStateCurrent == playerstate.idle )
 			if ( keyPrimary )
 			{
 				oWeapon.image_speed = 1;
-				if ( !keySecondary ) direction = mDir;
+				if ( !keySecondary ) direction = aim_direction;
 				
 				weaponStateCurrent = weaponstate.primary;
 			}
@@ -217,7 +212,7 @@ if ( playerStateCurrent == playerstate.idle )
 			//if ( instance_exists(oAnalogueRight) ) mDir = oAnalogueRight._direction;
 			if ( !keySecondary )
 			{
-				var Diff = angle_difference( mDir, direction );
+				var Diff = angle_difference( aim_direction, direction );
 				if ( angleAimDelayPrimary != -1 ) Diff *= angleAimDelayPrimary;
 				direction += Diff;
 			}
@@ -303,7 +298,7 @@ if ( playerStateCurrent == playerstate.idle )
 		
 		oCamera.camLengthY =  oCamera.camLengthYSecondary;
 		
-		var Diff = angle_difference( mDir, direction );
+		var Diff = angle_difference( aim_direction, direction );
 		if ( angleAimDelaySecondary != -1 ) Diff *= angleAimDelaySecondary;
 		direction += Diff;
 	}

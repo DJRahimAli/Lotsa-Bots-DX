@@ -22,18 +22,10 @@ respawnCooldown = 120;
 respawnCooldownCurrent = respawnCooldown;
 
 #region Controls
-keyLeft = false;
-keyRight = false;
-
-keyUp = false;
-keyDown = false;
-
 keyPrimary = false;
 keySecondary = false;
 
 keyNoclip = false;
-
-deadzone = 0.2;
 #endregion
 
 #region Movement Code
