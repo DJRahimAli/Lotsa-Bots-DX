@@ -170,7 +170,7 @@ if ( playerStateCurrent == playerstate.idle )
 	}
 	
 	
-	image_speed = clamp(abs(abs(hsp) + abs(vsp)), 0, 1);
+	image_speed = clamp(abs(hspReal) + abs(vspReal), 0, 1);
 	if ( abs(hsp) + abs(vsp) == 0 )
 	{
 		image_speed = 0;
